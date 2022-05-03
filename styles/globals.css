@@ -1,0 +1,75 @@
+@import '~antd/dist/antd.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100% ;
+  /* font-family: fantas  y; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#map { height: 180px; }
+
+h1 {
+  font-family: 'Ms Madi';
+  font-size: 60px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.ant-divider-vertical {
+  border-left: 3px dashed #C0975F !important;
+  height: 100% !important;
+}
+
+.ant-modal-content {
+  color: #C0975F;
+  background-color: #eeeeee;
+}
+
+
+.ant-list-item {
+  padding: 15px !important;
+}
+
+.ant-rate-star-full {
+  color: #C0975F !important
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding-top: 160px;
+  max-width: 100%;
+}
+
+.spacer {
+  aspect-ratio: 960/150;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+

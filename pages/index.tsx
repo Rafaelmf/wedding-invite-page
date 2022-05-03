@@ -1,0 +1,72 @@
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+
+import PartySection from "../components/party";
+import GiftsSection from "../components/gifts";
+import AboutUs from "../components/about";
+import CityLocations from "../components/city";
+
+const Home: NextPage = () => {
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Giovana e Julia</title>
+        <meta
+          name="description"
+          content="Página de convite do casamento de Geiovana e Julia"
+        />
+        <link rel="icon" href="/rings2.ico" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Square+Peg&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+          integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        />
+        <script
+          src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+          integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        ></script>
+      </Head>
+
+      <main className={styles.main}>
+        {/* <div className={styles.image}> */}
+        {/* </div> */}
+
+        <AboutUs />
+
+        <PartySection />
+
+        <div
+          style={{ backgroundImage: "url(./layered-waves.svg)" }}
+          className="spacer"
+        ></div>
+
+        <GiftsSection />
+
+        <div
+          style={{ backgroundImage: "url(./layered-waves.svg)" }}
+          className="spacer flip"
+        ></div>
+
+        <CityLocations />
+      </main>
+
+      <footer className={styles.footer}>
+        © por Giovana e Julia
+        <span className={styles.logo}>
+          <Image src="/rings2.ico" alt="rings" width={62} height={62} />
+        </span>
+      </footer>
+    </div>
+  );
+};
+
+export default Home;

@@ -1,0 +1,90 @@
+
+
+.ourStory {
+  background-color: #f9f9f9;
+  color: #2F4858;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width:100%;
+}
+
+.quizDiv {
+  /* border: 1px solid #2F4858 ; */
+  padding: 2%;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));;
+  gap: 20px;
+}
+
+.quizCard {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #C0975F;
+}
+
+.backQuizCard {
+  background-color: #2F4858;
+}
+
+.quizCardBody {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.backTxt {
+  color: #C0975F
+}
+
+
+
+.customShapeDivider {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.customShapeDivider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 161px;
+  transform: rotate(180deg);
+}
+
+.shapeFill {
+  fill: #F9F9F9;
+}
+
+
+
+
+.image {
+  z-Index: -1;
+  /* height: 80vh; */
+  width: 100vw;
+  max-width:100%;
+
+  aspect-ratio: 1920/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top:0;
+
+}

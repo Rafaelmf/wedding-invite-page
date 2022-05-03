@@ -1,0 +1,77 @@
+.party {
+  background-color: #2F4858;
+  color: #d8d8d8;
+  flex-direction: column;
+  align-items: center;
+  /* height: 70vh; */
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  max-width:100%;
+  padding: 1rem 3rem;
+
+}
+
+.partyInternal {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 30px 2.5fr;
+  gap: 2vw;
+  width: 100%;
+  /* border: 1px solid #EB9928; */
+}
+
+.map {
+  height: 450px;
+  width: 530px;
+  background-color: white;
+}
+
+.mapCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  font-size: 20px !important;
+}
+
+.titleParty {
+  color:#C0975F
+}
+
+.icons {
+  size: 40;
+  font-size: 40 !important;
+  color: #C0975F;
+  margin-left: 15px;
+}
+
+.socialMediaDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.SvgDivider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.SvgDivider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 161px;
+}
+
+.shapeFill {
+  fill: #2F4857;
+  background-color: red;
+}

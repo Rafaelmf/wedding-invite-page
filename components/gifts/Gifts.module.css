@@ -1,0 +1,29 @@
+.gifts {
+  background-color: rgb(242, 242, 242);
+  color: #565147 !important;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: 0 3rem;
+  width: 100vw;
+  max-width:100%;
+}
+
+.giftsGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));;
+  gap: 20px;
+  padding: 0 2%;
+  /* border: 1px solid #2F4858 ; */
+}
+
+.form {
+  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+

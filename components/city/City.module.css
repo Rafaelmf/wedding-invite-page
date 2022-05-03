@@ -1,0 +1,44 @@
+.location {
+  background-color: #2F4858;
+  color: #d8d8d8;
+  flex-direction: column;
+  align-items: center;
+  /* height: 70vh; */
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  max-width:100%;
+  padding: 1rem 3rem;
+
+}
+
+.locationInternal {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vw;
+  width: 100%;
+  /* border: 1px solid #EB9928; */
+}
+
+.locationInternal h1 {
+  color: #C0975F ;
+}
+
+.locationInternal > div {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+
+.placeRecomnd {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+}
+
+.placeRecomnd p {
+  color: #2F4858;
+}

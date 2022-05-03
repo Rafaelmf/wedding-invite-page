@@ -1,0 +1,36 @@
+
+
+.main {
+  /* min-height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  padding: 10px 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.image {
+  z-Index: -1;
+  /* height: 80vh; */
+  width: 100vw;
+  max-width:100%;
+
+  aspect-ratio: 1920/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+
