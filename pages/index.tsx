@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         ></script>
       </Head>
 
-      <main className={styles.main}>
+      <main className="main">
         <AboutUs />
 
         <PartySection />

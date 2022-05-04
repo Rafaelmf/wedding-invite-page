@@ -82,7 +82,15 @@ const getListComponent = (list: any) => (
               allowHalf
             />,
           ]}
-          extra={<img width={150} height={100} alt="logo" src={f.imageUrl} />}
+          extra={
+            <img
+              style={{ width: "6em", height: "5em" }}
+              width={150}
+              height={100}
+              alt="logo"
+              src={f.imageUrl}
+            />
+          }
         >
           <List.Item.Meta
             // style={{ width: "250px" }}
@@ -104,17 +112,17 @@ const index = () => {
     <div className={styles.location}>
       <div className={styles.locationInternal}>
         <div style={{ borderRadius: "15px" }}>
-          <img height={170} src="./bell.svg"></img>
+          <img style={{ height: "8em" }} src="./bell.svg"></img>
           <h1 style={{ margin: 0 }}>Hospedagem</h1>
           <>{getListComponent(accomodationList)}</>
         </div>
         <div style={{ borderRadius: "15px" }}>
-          <img height={170} src="./fork.svg"></img>
+          <img style={{ height: "8em" }} src="./fork.svg"></img>
           <h1 style={{ margin: 0 }}>Alimentação</h1>
           <>{getListComponent(foodList)}</>
         </div>
         <div style={{ borderRadius: "15px" }}>
-          <img height={170} src="./drink.svg"></img>
+          <img style={{ height: "8em" }} src="./drink.svg"></img>
           <h1 style={{ margin: 0 }}>Drinks</h1>
           <>{getListComponent(drinkList)}</>
         </div>

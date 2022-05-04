@@ -1,12 +1,8 @@
-
-
-.main {
-  /* min-height: 70vh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
+  min-width: 100%;
 }
+
+
 
 .footer {
   display: flex;
@@ -14,22 +10,25 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 
 
 .image {
   z-Index: -1;
-  /* height: 80vh; */
+  /* height: 80vh;
   width: 100vw;
   max-width:100%;
 
   aspect-ratio: 1920/1080;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
+  background-position: center; */
+  /* background-size: cover; */
+  
+  max-width:100%;
+max-height:100%;
 }
 
 

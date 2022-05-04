@@ -8,15 +8,15 @@
   justify-content: center;
   width: 100vw;
   max-width:100%;
-  padding: 1rem 3rem;
+  padding: 1em 2em;
 
 }
 
 .locationInternal {
   padding: 2%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1vw;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr)); 
+  gap: 2vw;
   width: 100%;
   /* border: 1px solid #EB9928; */
 }

@@ -107,7 +107,7 @@ const index = () => {
               onClick={() => openModal(g)}
               key={g.name}
               hoverable
-              style={{ width: 300, borderRadius: "15px" }}
+              style={{ width: "15em", borderRadius: "15px" }}
               cover={
                 <img
                   style={{ borderRadius: "15px 15px 0 0" }}

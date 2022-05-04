@@ -8,28 +8,90 @@
   justify-content: center;
   width: 100vw;
   max-width:100%;
-  padding: 1rem 3rem;
+  padding: 1em 2em;
 
 }
 
 .partyInternal {
-  padding: 2%;
+  /* padding: 2%; */
   display: grid;
-  grid-template-columns: 1fr 30px 2.5fr;
+  grid-template-columns: 1fr 20px 2.5fr;
   gap: 2vw;
   width: 100%;
+
   /* border: 1px solid #EB9928; */
 }
 
 .map {
-  height: 450px;
-  width: 530px;
+  height: 300px;
+  width: 630px;
   background-color: white;
 }
 
 .mapCenter {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+
+}
+@media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+}
+@media (max-width:800px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+
+  .mapCenter, .timer, .socialTxt, .avatar, .armazemPicture {
+    display: none !important;
+  }
+
+  .partyInternal {
+    grid-template-columns: 1fr !important;
+  }
+
+  .socialDiv, .avatarSpan {
+    grid-column: 1 !important;
+  }
+
+  .locationContainer {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .map {
+    height: 20px;
+    width: 30px;
+  }
+}
+@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+
+  .map {
+    height: 350px;
+    width: 530px;
+  }
+
+  .partyInternal {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.locationContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(17em, 1fr));
+  gap: 2em;
+  align-items: center;
+}
+
+.avatarSpan {
+  /* font-size: 1.5em; */
+  grid-column: 1 / span 2;
+}
+
+.armazemPicture {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .text {
@@ -47,11 +109,18 @@
   margin-left: 15px;
 }
 
+.socialDiv {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: space-around;
+}
+
 .socialMediaDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 
