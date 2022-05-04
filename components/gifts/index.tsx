@@ -5,7 +5,6 @@ import { IoGiftSharp, IoSendOutline } from "react-icons/io5";
 import { Card, Divider, Modal, Input, Button, message } from "antd";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import CardGift from "./CardGift";
 
 const { Meta } = Card;
 const { TextArea } = Input;
