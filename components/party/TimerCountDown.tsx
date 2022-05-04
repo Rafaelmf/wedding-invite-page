@@ -46,7 +46,7 @@ const TimerCountDown = () => {
     <div style={{ display: "flex", justifyContent: "space-evenly" }}>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#C0975F"
+        colors="#F9F9F9"
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
@@ -58,7 +58,7 @@ const TimerCountDown = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#C0975F"
+        colors="#F9F9F9"
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         onComplete={(totalElapsedTime) => ({
@@ -73,7 +73,7 @@ const TimerCountDown = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#C0975F"
+        colors="#F9F9F9"
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         onComplete={(totalElapsedTime) => ({
@@ -88,7 +88,7 @@ const TimerCountDown = () => {
       </CountdownCircleTimer>
       {/* <CountdownCircleTimer
         {...timerProps}
-        colors="#C0975F"
+        colors="#F9F9F9"
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => ({

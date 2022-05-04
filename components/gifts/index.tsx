@@ -5,6 +5,7 @@ import { IoGiftSharp, IoSendOutline } from "react-icons/io5";
 import { Card, Divider, Modal, Input, Button, message } from "antd";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import CardGift from "./CardGift";
 
 const { Meta } = Card;
 const { TextArea } = Input;
@@ -17,28 +18,23 @@ type Gift = {
 
 const gifts: Gift[] = [
   {
-    name: "Jogo de Pratos",
-    imgUrl: "https://cf.shopee.com.br/file/878a49deb9ece4802354e08ceb57bfa5",
-    price: 200,
-  },
-  {
-    name: "Talheres",
+    name: "Conjunto de talheres",
     imgUrl:
       "https://static.ideallar7.com.br/public/ideallar7/imagens/produtos/jogo-talheres-preto-com-dourado-932.jpeg",
-    price: 150,
+    price: 50,
   },
   {
     name: "Copos",
     imgUrl:
       "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/j/o/jogo-de-8-copos-opera-360ml-nadir_310371.jpg",
-    price: 150,
+    price: 100,
   },
   {
-    name: "Toalhas",
-    imgUrl:
-      "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/t/o/toalha-de-banho-profissional-havan-lufamar_73210.jpg",
-    price: 90,
+    name: "Jogo de Pratos",
+    imgUrl: "https://cf.shopee.com.br/file/878a49deb9ece4802354e08ceb57bfa5",
+    price: 150,
   },
+
   {
     name: "Mala de Viagem",
     imgUrl:
@@ -46,10 +42,21 @@ const gifts: Gift[] = [
     price: 250,
   },
   {
-    name: "Viagem",
+    name: "Airfryer",
+    imgUrl: "https://m.media-amazon.com/images/I/6143GQhK+IL._AC_SX679_.jpg",
+    price: 400,
+  },
+  {
+    name: "Viagem para praia",
     imgUrl:
       "https://www.viajali.com.br/wp-content/uploads/2020/04/praia-de-boa-viagem-8-730x730.jpg",
     price: 2000,
+  },
+  {
+    name: "Viagem de Cruzeiro",
+    imgUrl:
+      "https://statig0.akamaized.net/bancodeimagens/2t/fo/k1/2tfok1ypgos9foso33xow5968.jpg",
+    price: 3500,
   },
 ];
 
@@ -103,8 +110,14 @@ const index = () => {
               onClick={() => openModal(g)}
               key={g.name}
               hoverable
-              style={{ width: 300 }}
-              cover={<img alt={g.name} src={g.imgUrl} />}
+              style={{ width: 300, borderRadius: "15px" }}
+              cover={
+                <img
+                  style={{ borderRadius: "15px 15px 0 0" }}
+                  alt={g.name}
+                  src={g.imgUrl}
+                />
+              }
               actions={[
                 <span>
                   <IoGiftSharp className="icon" />
@@ -114,6 +127,7 @@ const index = () => {
             >
               <Meta title={g.name} description={`R$ ${g.price.toFixed(2)}`} />
             </Card>
+            // <CardGift />
           ))}
         </div>
         {currGift && (

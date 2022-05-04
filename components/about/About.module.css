@@ -16,13 +16,13 @@
   padding: 2%;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));;
   gap: 20px;
 }
 
 .quizCard {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,8 +62,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 161px;
-  transform: rotate(180deg);
+  height: 75px;
 }
 
 .shapeFill {
@@ -85,6 +84,6 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  top:0;
+  top:-120px;
 
 }
