@@ -12,33 +12,31 @@ const quizCards = [
     name: "pet",
     descriptionFront: "Qual o nome dos nossos pets?",
     descriptionBack: "Potter e Arya",
-    icon: <MdOutlinePets style={{ fontSize: "2.3 em" }} color={"#2F4858"} />,
+    icon: <MdOutlinePets style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
   },
   {
     name: "time",
     descriptionFront: "Quanto tempo estamos juntas?",
     descriptionBack: "4 anos",
-    icon: <IoTimeOutline style={{ fontSize: "2.3 em" }} color={"#2F4858"} />,
+    icon: <IoTimeOutline style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
   },
   {
     name: "proposal",
     descriptionFront: "Qual o lugar que a gente noivou?",
     descriptionBack: "São Carlos",
-    icon: <GiIsland style={{ fontSize: "2.3em" }} color={"#2F4858"} />,
+    icon: <GiIsland style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
   },
   {
     name: "food",
     descriptionFront: "Qual a nossa comida preferida?",
     descriptionBack: "Hamburguer",
-    icon: (
-      <IoFastFoodOutline style={{ fontSize: "2.3 em" }} color={"#2F4858"} />
-    ),
+    icon: <IoFastFoodOutline style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
   },
   {
     name: "activity",
     descriptionFront: "Qual a nossa atividade preferida?",
     descriptionBack: "Academia",
-    icon: <CgGym style={{ fontSize: "2.3 em" }} color={"#2F4858"} />,
+    icon: <CgGym style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
   },
 ];
 
@@ -113,7 +111,7 @@ const index = () => {
                 </Card>
 
                 <Card className={`${styles.quizCard} ${styles.backQuizCard}`}>
-                  <h2 className={styles.backTxt}>{card.descriptionBack}</h2>
+                  <p className={styles.backTxt}>{card.descriptionBack}</p>
                 </Card>
               </ReactCardFlip>
             </div>
