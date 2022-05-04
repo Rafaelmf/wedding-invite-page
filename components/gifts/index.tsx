@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import styles from "./Gifts.module.css";
 import { IoGiftSharp, IoSendOutline } from "react-icons/io5";
 import { Card, Divider, Modal, Input, Button, message } from "antd";

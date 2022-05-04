@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import PartySection from "../components/party";
@@ -37,9 +36,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {/* <div className={styles.image}> */}
-        {/* </div> */}
-
         <AboutUs />
 
         <PartySection />
@@ -62,7 +58,7 @@ const Home: NextPage = () => {
       <footer className={styles.footer}>
         © por Giovana e Julia
         <span className={styles.logo}>
-          <Image src="/rings2.ico" alt="rings" width={62} height={62} />
+          <img src="/rings2.ico" alt="rings" width={62} height={62} />
         </span>
       </footer>
     </div>
