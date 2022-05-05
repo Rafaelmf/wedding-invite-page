@@ -107,7 +107,7 @@ const index = () => {
               onClick={() => openModal(g)}
               key={g.name}
               hoverable
-              style={{ width: "15em", borderRadius: "15px" }}
+              style={{ width: "15em", borderRadius: "15px 0px 0px" }}
               cover={
                 <img
                   style={{ borderRadius: "15px 15px 0 0" }}
@@ -141,13 +141,28 @@ const index = () => {
             onCancel={() => setCurreGift(null)}
             width={900}
           >
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 30px 1fr",
-                gap: "20px",
-              }}
-            >
+            <div className={styles.modalContainer}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <p style={{ fontSize: "1.5em" }}>
+                  Para realizar a transferência de R${currGift.price} utilize o
+                  QRCode abaixo:
+                </p>
+                <img
+                  style={{ height: "15em", width: "15em" }}
+                  src="./qrcode.png"
+                ></img>
+                <p style={{ marginTop: "1em" }}>
+                  ou, utilize a nossa chave pix (11) 9961689816
+                </p>
+              </div>
+              <Divider type="vertical" />
+
               <div
                 style={{
                   display: "flex",
@@ -156,11 +171,9 @@ const index = () => {
                   gap: "20px",
                 }}
               >
-                <p style={{ fontSize: "24px" }}>
-                  Deixe uma mensagem para nós :)
-                </p>
+                <p style={{ fontSize: "1.5em" }}>Deixe uma mensagem </p>
                 <form className={styles.form} ref={form} onSubmit={sendEmail}>
-                  <label>Nome</label>
+                  <label>Nome:</label>
                   <Input
                     onChange={(e) => setName(e.target.value)}
                     value={name}
@@ -168,7 +181,7 @@ const index = () => {
                     placeholder="Nome"
                   ></Input>
 
-                  <label>Message</label>
+                  <label>Mensagem:</label>
                   <TextArea
                     onChange={(e) => setMessageTxt(e.target.value)}
                     value={messageTxt}
@@ -193,25 +206,6 @@ const index = () => {
                     Enviar
                   </Button>
                 </form>
-              </div>
-
-              <Divider type="vertical" />
-
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
-                <p style={{ fontSize: "24px" }}>
-                  Para realizar a transferência de R${currGift.price} utilize o
-                  QRCode abaixo:
-                </p>
-                <img height={200} width={200} src="./qrcode.png"></img>
-                <p style={{ marginTop: "10px" }}>
-                  ou, utilize a nossa chave pix (11) 9961689816
-                </p>
               </div>
             </div>
           </Modal>

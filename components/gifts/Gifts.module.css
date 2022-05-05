@@ -27,6 +27,21 @@
   width: 100%;
 }
 
+.modalContainer {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
+  gap: 1em;
+  color: #2F4858;
+}
+
+@media (max-width:800px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+
+  .modalContainer {
+    grid-template-columns: 1fr;
+  }
+  
+}
+
 
 
 

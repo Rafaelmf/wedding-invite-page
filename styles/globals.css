@@ -8,7 +8,8 @@ body {
   max-width: 100% ;
   height: 100%;
   width: 100%;
-  /* font-family: fantas  y; */
+  font-family: 'Kalam', cursive;
+  font-size: 18px;
 }
 
 a {
@@ -40,8 +41,8 @@ h1 {
 }
 
 .ant-modal-content {
-  color: #C0975F;
-  background-color: #eeeeee;
+  /* color: #C0975F; */
+  /* background-color: #eeeeee; */
 }
 
 

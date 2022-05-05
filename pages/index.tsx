@@ -33,6 +33,11 @@ const Home: NextPage = () => {
           src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
           integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         ></script>
+
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+        </style>
       </Head>
 
       <main className="main">
