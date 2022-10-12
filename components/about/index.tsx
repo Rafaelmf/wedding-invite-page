@@ -12,31 +12,31 @@ const quizCards = [
     name: "pet",
     descriptionFront: "Qual o nome dos nossos pets?",
     descriptionBack: "Potter e Aria",
-    icon: <MdOutlinePets style={{ fontSize: "4em" }} color={"#2F4858"} />,
+    icon: <MdOutlinePets style={{ fontSize: "4em" }} color={"#345870"} />,
   },
   {
     name: "gossip",
     descriptionFront: "O que mais gostamos de fazer?",
     descriptionBack: "Fofocar hehe",
-    icon: <GiConversation style={{ fontSize: "4em" }} color={"#2F4858"} />,
+    icon: <GiConversation style={{ fontSize: "4em" }} color={"#345870"} />,
   },
   {
     name: "proposal",
     descriptionFront: "Onde nós noivamos?",
     descriptionBack: "São Bento do Sapucaí - SP",
-    icon: <GiBigDiamondRing style={{ fontSize: "4em" }} color={"#2F4858"} />,
+    icon: <GiBigDiamondRing style={{ fontSize: "4em" }} color={"#345870"} />,
   },
   {
     name: "trip",
     descriptionFront: "Qual foi a nossa viagem mais marcante?",
     descriptionBack: "Paris, 2019",
-    icon: <GiBackpack style={{ fontSize: "4em" }} color={"#2F4858"} />,
+    icon: <GiBackpack style={{ fontSize: "4em" }} color={"#345870"} />,
   },
   {
     name: "food",
     descriptionFront: "Qual a nossa comida favorita?",
     descriptionBack: "Churrasco",
-    icon: <GiBarbecue style={{ fontSize: "4em" }} color={"#2F4858"} />,
+    icon: <GiBarbecue style={{ fontSize: "4em" }} color={"#345870"} />,
   },
 ];
 
@@ -72,7 +72,7 @@ const index = () => {
         </svg>
       </div> */}
       <div className={styles.ourStory}>
-        <h1 style={{ color: "#2F4858" }}>Nossa história</h1>
+        <h1 style={{ color: "#345870" }}>Nossa história</h1>
         <p style={{ width: "80%", fontSize: "1.2rem" }}>
           Apesar de termos muitos amigos em comum desde o começo da graduação, o universo colocou uma no caminho da outra somente em 2018. Nos conhecemos, nos apaixonamos e desde então nos impulsionamos a ser a melhor versão de nós mesmas. 
 Não poderíamos ter construído uma história tão cheia de amor, união e comprenssão sem os nossos amigos, colegas, mães, pais, irmãos e familiares ao nosso redor. 
@@ -88,8 +88,8 @@ Ficamos imensamente felizes em poder contar com a presença dessas pessoas no di
               gridRow: "1 / span 3",
             }}
           >
-            <h1 style={{ color: "#2F4858" }}>Quiz sobre o casal</h1>
-            <span style={{ color: "#2F4858" }}>
+            <h1 style={{ color: "#345870" }}>Quiz sobre o casal</h1>
+            <span style={{ color: "#345870" }}>
               Passe o mouse sobre os cards para ver a resposta!
             </span>
           </div>

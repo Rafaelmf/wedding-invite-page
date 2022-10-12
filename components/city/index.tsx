@@ -147,7 +147,11 @@ const getListComponent = (list: any) => (
 );
 const index = () => {
   return (
+    <>
+
     <div className={styles.location}>
+    <h1 style={{ color: "white" }}>Recomendações das noivas</h1>
+      
       <div className={styles.locationInternal}>
         <div style={{ borderRadius: "15px" }}>
           <img style={{ height: "8em" }} src="./bell.svg"></img>
@@ -171,6 +175,8 @@ const index = () => {
         </div>
       </div>
     </div>
+    </>
+
   );
 };
 

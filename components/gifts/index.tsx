@@ -48,13 +48,7 @@ const gifts: Gift[] = [
     imgUrl:
       "https://www.viajali.com.br/wp-content/uploads/2020/04/praia-de-boa-viagem-8-730x730.jpg",
     price: 2000,
-  },
-  {
-    name: "Viagem de Cruzeiro",
-    imgUrl:
-      "https://statig0.akamaized.net/bancodeimagens/2t/fo/k1/2tfok1ypgos9foso33xow5968.jpg",
-    price: 3500,
-  },
+  }
 ];
 
 const index = () => {
