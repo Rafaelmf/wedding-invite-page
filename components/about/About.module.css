@@ -25,6 +25,7 @@
   width: 15em;
   height: 15em;
   display: flex;
+  padding: 1em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -37,7 +38,7 @@
 }
 
 .quizCardBody {
-  font-size: 1em;
+  font-size: 1.3em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,6 +46,7 @@
 }
 
 .backTxt {
+  font-size: 1.3em;
   color: #C0975F
 }
 

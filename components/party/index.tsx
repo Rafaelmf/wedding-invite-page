@@ -41,8 +41,8 @@ const index = () => {
             <h1 className={styles.titleParty}>
               <AiOutlineClockCircle className="icon" /> Quando
             </h1>
-            <p>Sábado, 21 de Abril de 2023.</p>
-            <p>Início da celebração as 09 horas da manhã.</p>
+            <p>Sábado 22 de abril de 2023</p>
+            <p>Início da celebração às 8h30 da manhã.</p>
 
             <div className={styles.timer}>
               <TimerCountDown />

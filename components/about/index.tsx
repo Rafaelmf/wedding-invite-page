@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import { IoFastFoodOutline, IoTimeOutline } from "react-icons/io5";
 import { MdOutlinePets } from "react-icons/md";
-import { GiIsland } from "react-icons/gi";
+import { GiBackpack, GiBarbecue, GiBigDiamondRing, GiConversation, GiIsland } from "react-icons/gi";
 import styles from "./About.module.css";
 import { CgGym } from "react-icons/cg";
 
@@ -11,32 +11,32 @@ const quizCards = [
   {
     name: "pet",
     descriptionFront: "Qual o nome dos nossos pets?",
-    descriptionBack: "Potter e Arya",
-    icon: <MdOutlinePets style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
+    descriptionBack: "Potter e Aria",
+    icon: <MdOutlinePets style={{ fontSize: "4em" }} color={"#2F4858"} />,
   },
   {
-    name: "time",
-    descriptionFront: "Quanto tempo estamos juntas?",
-    descriptionBack: "4 anos",
-    icon: <IoTimeOutline style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
+    name: "gossip",
+    descriptionFront: "O que mais gostamos de fazer?",
+    descriptionBack: "Fofocar hehe",
+    icon: <GiConversation style={{ fontSize: "4em" }} color={"#2F4858"} />,
   },
   {
     name: "proposal",
-    descriptionFront: "Qual o lugar que a gente noivou?",
-    descriptionBack: "São Carlos",
-    icon: <GiIsland style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
+    descriptionFront: "Onde nós noivamos?",
+    descriptionBack: "São Bento do Sapucaí - SP",
+    icon: <GiBigDiamondRing style={{ fontSize: "4em" }} color={"#2F4858"} />,
+  },
+  {
+    name: "trip",
+    descriptionFront: "Qual foi a nossa viagem mais marcante?",
+    descriptionBack: "Paris, 2019",
+    icon: <GiBackpack style={{ fontSize: "4em" }} color={"#2F4858"} />,
   },
   {
     name: "food",
-    descriptionFront: "Qual a nossa comida preferida?",
-    descriptionBack: "Hamburguer",
-    icon: <IoFastFoodOutline style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
-  },
-  {
-    name: "activity",
-    descriptionFront: "Qual a nossa atividade preferida?",
-    descriptionBack: "Academia",
-    icon: <CgGym style={{ fontSize: "3.5em" }} color={"#2F4858"} />,
+    descriptionFront: "Qual a nossa comida favorita?",
+    descriptionBack: "Churrasco",
+    icon: <GiBarbecue style={{ fontSize: "4em" }} color={"#2F4858"} />,
   },
 ];
 
@@ -74,13 +74,9 @@ const index = () => {
       <div className={styles.ourStory}>
         <h1 style={{ color: "#2F4858" }}>Nossa história</h1>
         <p style={{ width: "80%", fontSize: "1.2rem" }}>
-          DANCE, DANCE, DANCE <br />
-          As a pair of determined designers, Daniela and Moe first got to know
-          each other working late nights in design studio during grad school—
-          brewing that third pot of coffee, sharing tasty treats, and exchanging
-          upbeat bops. Yet it wasn’t until a group outing where they were left
-          alone on the dance floor, grooving to funky soul beats, when they knew
-          they were meant to be together.
+          Apesar de termos muitos amigos em comum desde o começo da graduação, o universo colocou uma no caminho da outra somente em 2018. Nos conhecemos, nos apaixonamos e desde então nos impulsionamos a ser a melhor versão de nós mesmas. 
+Não poderíamos ter construído uma história tão cheia de amor, união e comprenssão sem os nossos amigos, colegas, mães, pais, irmãos e familiares ao nosso redor. 
+Ficamos imensamente felizes em poder contar com a presença dessas pessoas no dia mais especial de nossas vidas.
         </p>
         <div className={styles.quizDiv}>
           <div
