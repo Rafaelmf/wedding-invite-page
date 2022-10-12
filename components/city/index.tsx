@@ -119,7 +119,7 @@ const getListComponent = (list: any) => (
           className={styles.listItem}
           onClick={() => {
             if(window === null) return
-            window.open(f.link, '_blank').focus();
+            window.open(f.link, '_blank')?.focus();
           }}
           extra={
             <img
