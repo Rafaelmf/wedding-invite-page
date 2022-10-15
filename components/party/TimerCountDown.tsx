@@ -36,7 +36,7 @@ const getTimeDays = (time: number) => (time / daySeconds) | 0;
 
 const TimerCountDown = () => {
   const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = new Date(2023, 4, 21, 9).getTime() / 1000; // use UNIX timestamp in seconds
+  const endTime = new Date(2023, 4, 22, 8).getTime() / 1000; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - stratTime;
   const days = Math.ceil(remainingTime / daySeconds);
@@ -86,7 +86,7 @@ const TimerCountDown = () => {
           </span>
         )}
       </CountdownCircleTimer>
-      {/* <CountdownCircleTimer
+      <CountdownCircleTimer
         {...timerProps}
         colors="#F9F9F9"
         duration={minuteSeconds}
@@ -100,7 +100,7 @@ const TimerCountDown = () => {
             {renderTime("Segundos", getTimeSeconds(elapsedTime))}
           </span>
         )}
-      </CountdownCircleTimer> */}
+      </CountdownCircleTimer>
     </div>
   );
 };

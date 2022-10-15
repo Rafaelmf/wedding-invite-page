@@ -46,15 +46,15 @@ const Home: NextPage = () => {
         <PartySection />
 
         <div
-          style={{ backgroundImage: "url(./layered-waves.svg)" }}
+          style={{ backgroundImage: "url(./layered-waves-haikei-top.svg)" }}
           className="spacer"
         ></div>
 
         <GiftsSection />
 
         <div
-          style={{ backgroundImage: "url(./layered-waves.svg)" }}
-          className="spacer flip"
+          style={{ backgroundImage: "url(./layered-waves-haikei.svg)" }}
+          className="spacer"
         ></div>
 
         <CityLocations />

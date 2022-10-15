@@ -11,6 +11,7 @@ import {
   AiOutlineInstagram,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
+import {FaMapMarkedAlt} from "react-icons/fa"
 import { Divider, Avatar } from "antd";
 import Link from "antd/lib/typography/Link";
 
@@ -20,7 +21,7 @@ const index = () => {
     { ssr: false } // This line is important. It's what prevents server-side render
   );
   return (
-    <section style={{ backgroundColor: "#F9F9F9" }}>
+    <section style={{ backgroundColor: "#f2f2f2" }}>
       <div className={styles.SvgDivider}>
         <svg
           data-name="Layer 1"
@@ -59,17 +60,15 @@ const index = () => {
 
             <div className={styles.locationContainer}>
               <span className={styles.avatarSpan}>
-                <Avatar
-                  className={styles.avatar}
-                  style={{ marginRight: "10px" }}
-                  size={60}
-                  src="./armazem.jpeg"
-                />
-                <p style={{ fontSize: "1.5em" }}>Espaço Armazém de Maria</p>
-                <p>
+
+                <p style={{ fontSize: "1.8em" }}>Espaço Armazém de Maria</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005">
+                <FaMapMarkedAlt style={{marginRight: "10px"}} size={30} className={styles.icons} />
+
                   Rua Vereador José Pinheiro Filho, 111 - Jardim Tangará - São
                   Carlos/SP
-                </p>
+                </a>
+                <br /><br />
                 <p>Acesso também pela rodovia Washington Luiz, km 230</p>
               </span>
 
@@ -78,9 +77,9 @@ const index = () => {
                 src="https://media-cdn.tripadvisor.com/media/photo-s/1b/b3/db/5e/armazem-de-maria.jpg"
               />
 
-              <div className={styles.mapCenter}>
+              {/* <div className={styles.mapCenter}>
                 <DynamicMapWithNoSSR />
-              </div>
+              </div> */}
 
               <div className={styles.socialDiv}>
                 <div className={styles.socialMediaDiv}>

@@ -6,6 +6,7 @@ import { MdOutlinePets } from "react-icons/md";
 import { GiBackpack, GiBarbecue, GiBigDiamondRing, GiConversation, GiIsland } from "react-icons/gi";
 import styles from "./About.module.css";
 import { CgGym } from "react-icons/cg";
+import CarouselPhotos from "./Carousel"
 
 const quizCards = [
   {
@@ -56,8 +57,9 @@ const index = () => {
 
   return (
     <section style={{ paddingTop: "0" }}>
+      <div style={{width: "100vw", height: "94vh"}}>
       <img className={styles.image} src="/front.png" alt="Main Photo" />
-
+      </div>
       {/* <div className={styles.customShapeDivider}>
         <svg
           data-name="Layer 1"
@@ -72,12 +74,19 @@ const index = () => {
         </svg>
       </div> */}
       <div className={styles.ourStory}>
-        <h1 style={{ color: "#345870" }}>Nossa história</h1>
-        <p style={{ width: "80%", fontSize: "1.2rem" }}>
+        <div className={styles.twoColumn}>
+
+        <CarouselPhotos />
+        <div style={{textAlign: "center"}}>
+        <h1 style={{ color: "#345870", display: "flex", justifyContent: "center" }}>Nossa história</h1>
+        <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
           Apesar de termos muitos amigos em comum desde o começo da graduação, o universo colocou uma no caminho da outra somente em 2018. Nos conhecemos, nos apaixonamos e desde então nos impulsionamos a ser a melhor versão de nós mesmas. 
 Não poderíamos ter construído uma história tão cheia de amor, união e comprenssão sem os nossos amigos, colegas, mães, pais, irmãos e familiares ao nosso redor. 
 Ficamos imensamente felizes em poder contar com a presença dessas pessoas no dia mais especial de nossas vidas.
         </p>
+        </div>
+
+        </div>
         <div className={styles.quizDiv}>
           <div
             style={{

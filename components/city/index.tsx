@@ -150,7 +150,7 @@ const index = () => {
     <>
 
     <div className={styles.location}>
-    <h1 style={{ color: "white" }}>Recomendações das noivas</h1>
+    <h1  style={{ color: "#F9F9F9" }}>Recomendações das noivas</h1>
       
       <div className={styles.locationInternal}>
         <div style={{ borderRadius: "15px" }}>
