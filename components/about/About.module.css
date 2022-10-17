@@ -16,8 +16,8 @@
   padding: 2%;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap: 0.8em;
+  grid-template-columns: 1.3fr minmax(15em, 1fr) minmax(15em, 1fr) minmax(15em, 1fr);  
+  row-gap: 2em;
   justify-items: center;
 }
 

@@ -169,7 +169,7 @@ const index = () => {
           <>{getListComponent(foodList)}</>
         </div>
         <div style={{ borderRadius: "15px" }}>
-          <img style={{ height: "8em" }} src="./drink.svg"></img>
+          <img style={{ height: "8em" }} src="./coffee-cup.svg"></img>
           <h1 style={{ margin: 0 }}>Cafés e padarias</h1>
           <>{getListComponent(drinkList)}</>
         </div>
