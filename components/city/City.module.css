@@ -14,7 +14,7 @@
 
 .listItem {
   cursor: pointer;
-  height: 150px;
+  height: 13em;
   padding: 1em;
   display: flex;
 
@@ -25,6 +25,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+  margin-left: 10px !important;
 }
 
 .listItem:hover {
