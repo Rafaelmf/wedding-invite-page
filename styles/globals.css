@@ -1,5 +1,20 @@
 @import '~antd/dist/antd.css';
 
+@font-face{
+  font-family: "DreamAvenue";
+  src: url("../fonts/DreamAvenue.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "JosefinSlab";
+  src: url("../fonts/JosefinSlab.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "OpenSansLight";
+  src: url("../fonts/OpenSansLight.ttf") format("truetype");
+}
+
 html,
 body {
   position: absolute;
@@ -10,6 +25,7 @@ body {
   width: 100%;
   font-family: 'Kalam', cursive;
   font-size: 18px;
+  background-color: #f2f2f2;
 }
 
 a {

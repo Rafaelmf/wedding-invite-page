@@ -13,6 +13,7 @@
 }
 
 .partyInternal {
+  text-align: center;
   /* padding: 2%; */
   display: grid;
   grid-template-columns: 1fr 20px 2.5fr;
@@ -20,6 +21,11 @@
   width: 100%;
 
   /* border: 1px solid #EB9928; */
+}
+
+.partyInternal * p {
+  color: #C66C49;
+  font-size: 1.2em;
 }
 
 .map {
@@ -76,14 +82,18 @@
 }
 
 .locationContainer {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(2, minmax(17em, 1fr));
-  gap: 1.5em;
+  gap: 2em;
   align-items: center;
 }
 
 .avatarSpan {
-  /* font-size: 1.5em; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
   grid-column: 1 ;
 }
 
@@ -99,7 +109,8 @@
 }
 
 .titleParty {
-  color:#C66C49
+  color:#f2f2f2;
+  justify-content: center
 }
 
 .icons {

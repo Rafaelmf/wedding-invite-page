@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Giovana e Julia</title>
+        <title>Julia e Giovana</title>
         <meta
           name="description"
           content="Página de convite do casamento de Geiovana e Julia"

@@ -9,32 +9,41 @@
   align-items: center;
   width: 100vw;
   max-width:100%;
+  margin-bottom: 5em;
 }
 
 .quizDiv {
-  /* border: 1px solid #2F4858 ; */
-  padding: 2%;
+  padding: 5%;
   display: grid;
   width: 100%;
   grid-template-columns: 1.3fr minmax(15em, 1fr) minmax(15em, 1fr) minmax(15em, 1fr);  
   row-gap: 2em;
   justify-items: center;
+  top: 0;
+  position: absolute
 }
 
 .quizCard {
-  width: 15em;
-  height: 15em;
+  width: 17em;
+  height: 17em;
   display: flex;
-  padding: 1em;
+  padding: 1.3em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  background-color: #C66C49;
+  background-color: #588292;
+  border-radius: 50%;
+  font-family: "OpenSansLight";
+  font-size: 0.8em;
+  border:  1px solid #3b5863 !important;
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.48)
+
 }
 
 .backQuizCard {
-  background-color: #345870;
+  background-color: #9F4E3D;
+  border:  1px solid #6d352a !important;
 }
 
 .quizCardBody {
@@ -43,12 +52,12 @@
   flex-direction: column;
   align-items: center;
   gap: 0.8em;
-  color: #345870;
+  color: #e4e6ea;
 }
 
 .backTxt {
   font-size: 1.3em;
-  color: #C66C49
+  color: #fffdef
 }
 
 
@@ -107,5 +116,6 @@
 .twoColumn {
   margin-top: 40px;
   display: grid;
+  gap: 5em;
   grid-template-columns: 2fr 1.3fr;
 }

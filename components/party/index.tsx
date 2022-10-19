@@ -38,12 +38,12 @@ const index = () => {
 
       <div className={styles.party}>
         <div className={styles.partyInternal}>
-          <div>
+          <div style={{textAlign: "center"}}>
             <h1 className={styles.titleParty}>
-              <AiOutlineClockCircle className="icon" /> Quando
+              <AiOutlineClockCircle className="icon" /> Quando?
             </h1>
-            <p>Sábado 22 de abril de 2023</p>
-            <p>Início da celebração às 8h30 da manhã.</p>
+            <p>22/04/2023</p>
+            <p>Início às 08h30</p>
 
             <div className={styles.timer}>
               <TimerCountDown />
@@ -55,22 +55,28 @@ const index = () => {
           <div>
             <h1 className={styles.titleParty}>
               <IoLocationOutline className="icon" />
-              Onde
+              Onde?
             </h1>
 
             <div className={styles.locationContainer}>
-              <span className={styles.avatarSpan}>
-
-                <p style={{ fontSize: "1.8em" }}>Espaço Armazém de Maria</p>
-                <a target="_blank" href="https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005">
-                <FaMapMarkedAlt style={{marginRight: "10px"}} size={30} className={styles.icons} />
-
-                  Rua Vereador José Pinheiro Filho, 111 - Jardim Tangará - São
-                  Carlos/SP
+              <div className={styles.avatarSpan}>
+                <a style={{ fontSize: "1.8em" }} target="_blank" href="https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005">
+                  {/* <FaMapMarkedAlt style={{marginRight: "10px"}} size={30} className={styles.icons} /> */}
+                  Espaço Armazém de Maria
                 </a>
-                <br /><br />
-                <p>Acesso também pela rodovia Washington Luiz, km 230</p>
-              </span>
+                <Link
+                    target="_blank"
+                    href="https://www.facebook.com/espacoarmazemdemaria/"
+                  >
+                    <AiOutlineFacebook size={50} className={styles.icons} />
+                  </Link>
+                  <Link
+                    target="_blank"
+                    href="https://www.instagram.com/espacoarmazemdemaria/?hl=en"
+                  >
+                    <AiOutlineInstagram size={50} className={styles.icons} />
+                  </Link>
+              </div>
 
               <img
                 className={styles.armazemPicture}
