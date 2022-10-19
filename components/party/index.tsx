@@ -78,16 +78,16 @@ const index = () => {
                   </Link>
               </div>
 
-              <img
+              {/* <img
                 className={styles.armazemPicture}
                 src="https://media-cdn.tripadvisor.com/media/photo-s/1b/b3/db/5e/armazem-de-maria.jpg"
-              />
+              /> */}
 
-              {/* <div className={styles.mapCenter}>
+               <div className={styles.mapCenter}>
                 <DynamicMapWithNoSSR />
-              </div> */}
+              </div> 
 
-              <div className={styles.socialDiv}>
+              {/* <div className={styles.socialDiv}>
                 <div className={styles.socialMediaDiv}>
                   <Link
                     target="_blank"
@@ -115,7 +115,7 @@ const index = () => {
                   </Link>
                   <p className={styles.socialTxt}>+55 16 99158-0024</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
