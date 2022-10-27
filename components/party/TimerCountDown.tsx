@@ -4,11 +4,19 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 const minuteSeconds = 60;
 const hourSeconds = 3600;
 const daySeconds = 86400;
+const colorsList = [
+  "df0c06",
+  "fd4600",
+  "#ffb400",
+  "#00a364",
+  "#0075cb",
+  "#6f30a4",
+];
 
 const timerProps = {
   isPlaying: true,
   size: 120,
-  strokeWidth: 6,
+  strokeWidth: 10,
 };
 
 const renderTime = (dimension: string, time: number) => {
@@ -43,10 +51,19 @@ const TimerCountDown = () => {
   const daysDuration = days * daySeconds;
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-evenly",
+        gap: "20px",
+        borderRadius: "5px",
+        padding: "1em",
+      }}
+    >
       <CountdownCircleTimer
         {...timerProps}
-        colors="#F9F9F9"
+        colors="#fd4600"
+        trailColor="#f2f2f2"
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
@@ -58,7 +75,8 @@ const TimerCountDown = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#F9F9F9"
+        colors="#ffb400"
+        trailColor="#f2f2f2"
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         onComplete={(totalElapsedTime) => ({
@@ -73,7 +91,8 @@ const TimerCountDown = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#F9F9F9"
+        colors="#00a364"
+        trailColor="#f2f2f2"
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         onComplete={(totalElapsedTime) => ({
@@ -88,7 +107,8 @@ const TimerCountDown = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#F9F9F9"
+        colors="#0075cb"
+        trailColor="#f2f2f2"
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => ({

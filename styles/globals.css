@@ -15,6 +15,11 @@
   src: url("../fonts/OpenSansLight.ttf") format("truetype");
 }
 
+@font-face{
+  font-family: "Halimun";
+  src: url("../fonts/Halimun.ttf") format("truetype");
+}
+
 html,
 body {
   position: absolute;
@@ -52,7 +57,7 @@ h1 {
 }
 
 .ant-divider-vertical {
-  border-left: 3px dashed #C0975F !important;
+  border-left: 3px dashed #efe6dd !important;
   height: 100% !important;
 }
 
@@ -105,5 +110,38 @@ section {
 .ant-card-body {
   padding: 0.75em;
 }
+.ant-carousel .slick-dots-bottom {
+  bottom: 0px;
+}
+.ant-carousel .slick-dots li {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px !important;
 
+  display: flex;
+align-content: center;
+    align-items: center;
+}
 
+.ant-carousel .slick-dots li button {
+  height: 20px ;
+  width: 20px ;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  height: 30px;
+  width: 30px;
+}
+
+.dotsCarrousel > li:nth-child(1) > button { background: #df0c06 !important; opacity: 1; }
+.dotsCarrousel > li:nth-child(2) > button { background: #fd4600 !important; opacity: 1; }
+.dotsCarrousel > li:nth-child(3) > button { background: #ffb400 !important; opacity: 1; }
+.dotsCarrousel > li:nth-child(4) > button { background: #00a364 !important; opacity: 1; }
+.dotsCarrousel > li:nth-child(5) > button { background: #0075cb !important; opacity: 1; }
+.dotsCarrousel > li:nth-child(6) > button { background: #6f30a4 !important; opacity: 1; }
+
+.ant-image-img {
+  object-fit: contain;
+}

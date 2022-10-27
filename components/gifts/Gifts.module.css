@@ -7,14 +7,16 @@
   padding: 0 3rem;
   width: 100vw;
   max-width:100%;
+  font-family: "JosefinSlab";
+  font-weight: bold;
 }
 
 .giftsGrid {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));;
   gap: 20px;
-  padding: 0 2%;
+  padding: 0 1%;
   align-items: center;
   justify-items: center;
   /* border: 1px solid #2F4858 ; */
@@ -32,6 +34,35 @@
   grid-template-columns: 1fr 30px 1fr;
   gap: 1em;
   color: #2F4858;
+  font-family: "JosefinSlab";
+  font-weight: bold;
+}
+
+.cardContent {
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContent > p {
+  margin: 0 !important;
+}
+
+.cardContent > button {
+  margin-top: 1em !important;
+  color: white;
+  background-color: #C66C49;
+  border-color: #ac5e3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContent > button:hover {
+  color: white;
+  background-color: #c66c498f;
+  border-color: #9f573b99;
 }
 
 @media (max-width:800px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 

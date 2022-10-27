@@ -14,7 +14,7 @@
 
 .listItem {
   cursor: pointer;
-  height: 13em;
+  /* height: 10em; */
   padding: 1em;
   display: flex;
 

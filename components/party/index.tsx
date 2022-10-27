@@ -11,7 +11,7 @@ import {
   AiOutlineInstagram,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-import {FaMapMarkedAlt} from "react-icons/fa"
+import { FaMapMarkedAlt } from "react-icons/fa";
 import { Divider, Avatar } from "antd";
 import Link from "antd/lib/typography/Link";
 
@@ -38,11 +38,12 @@ const index = () => {
 
       <div className={styles.party}>
         <div className={styles.partyInternal}>
-          <div style={{textAlign: "center"}}>
+          <div style={{ textAlign: "center" }}>
             <h1 className={styles.titleParty}>
-              <AiOutlineClockCircle className="icon" /> Quando?
+              {/* <AiOutlineClockCircle className="icon" />  */}
+              Quando ?
             </h1>
-            <p>22/04/2023</p>
+            <p style={{ marginBottom: "0" }}>22/04/2023</p>
             <p>Início às 08h30</p>
 
             <div className={styles.timer}>
@@ -54,28 +55,32 @@ const index = () => {
 
           <div>
             <h1 className={styles.titleParty}>
-              <IoLocationOutline className="icon" />
-              Onde?
+              {/* <IoLocationOutline className="icon" /> */}
+              Onde ?
             </h1>
 
             <div className={styles.locationContainer}>
               <div className={styles.avatarSpan}>
-                <a style={{ fontSize: "1.8em" }} target="_blank" href="https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005">
+                <a
+                  style={{ fontSize: "1.8em" }}
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005"
+                >
                   {/* <FaMapMarkedAlt style={{marginRight: "10px"}} size={30} className={styles.icons} /> */}
                   Espaço Armazém de Maria
                 </a>
                 <Link
-                    target="_blank"
-                    href="https://www.facebook.com/espacoarmazemdemaria/"
-                  >
-                    <AiOutlineFacebook size={50} className={styles.icons} />
-                  </Link>
-                  <Link
-                    target="_blank"
-                    href="https://www.instagram.com/espacoarmazemdemaria/?hl=en"
-                  >
-                    <AiOutlineInstagram size={50} className={styles.icons} />
-                  </Link>
+                  target="_blank"
+                  href="https://www.facebook.com/espacoarmazemdemaria/"
+                >
+                  <AiOutlineFacebook size={50} className={styles.icons} />
+                </Link>
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/espacoarmazemdemaria/?hl=en"
+                >
+                  <AiOutlineInstagram size={50} className={styles.icons} />
+                </Link>
               </div>
 
               {/* <img
@@ -83,9 +88,9 @@ const index = () => {
                 src="https://media-cdn.tripadvisor.com/media/photo-s/1b/b3/db/5e/armazem-de-maria.jpg"
               /> */}
 
-               <div className={styles.mapCenter}>
+              <div className={styles.mapCenter}>
                 <DynamicMapWithNoSSR />
-              </div> 
+              </div>
 
               {/* <div className={styles.socialDiv}>
                 <div className={styles.socialMediaDiv}>

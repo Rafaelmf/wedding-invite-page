@@ -3,10 +3,16 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import { IoFastFoodOutline, IoTimeOutline } from "react-icons/io5";
 import { MdOutlinePets } from "react-icons/md";
-import { GiBackpack, GiBarbecue, GiBigDiamondRing, GiConversation, GiIsland } from "react-icons/gi";
+import {
+  GiBackpack,
+  GiBarbecue,
+  GiBigDiamondRing,
+  GiConversation,
+  GiIsland,
+} from "react-icons/gi";
 import styles from "./About.module.css";
 import { CgGym } from "react-icons/cg";
-import CarouselPhotos from "./Carousel"
+import CarouselPhotos from "./Carousel";
 
 const quizCards = [
   {
@@ -57,7 +63,7 @@ const index = () => {
 
   return (
     <section style={{ paddingTop: "0" }}>
-      <div style={{width: "100%", height: "93vh"}}>
+      <div style={{ width: "100%", height: "93vh" }}>
         <img className={styles.image} src="/front.png" alt="Main Photo" />
       </div>
       {/* <div className={styles.customShapeDivider}>
@@ -73,16 +79,15 @@ const index = () => {
           ></path>
         </svg>
       </div> */}
-      <div style={{position: "relative"}}>
-              <img 
-              style={{ zIndex: -1}}
-               width={"100%"} 
-               src="/quizBackgroundImg.png"
-                alt="Quizz Back" 
-                />
+      <div style={{ position: "relative" }}>
+        <img
+          style={{ zIndex: -1 }}
+          width={"100%"}
+          src="/quizBackgroundImg.png"
+          alt="Quizz Back"
+        />
 
-          <div className={styles.quizDiv}>
-              
+        <div className={styles.quizDiv}>
           <div
             style={{
               display: "flex",
@@ -90,17 +95,30 @@ const index = () => {
               alignItems: "center",
               justifyContent: "center",
               gridRow: "1 / span 3",
-
             }}
           >
-            <span style={{ color: "#345870", fontFamily: "DreamAvenue", fontSize: "6em" }}>Quiz sobre o casal</span>
-            <span style={{ color: "#345870", fontFamily: "JosefinSlab", fontSize: "1.5em" }}>
+            <span
+              style={{
+                color: "#345870",
+                fontFamily: "DreamAvenue",
+                fontSize: "6em",
+                textAlign: "center",
+              }}
+            >
+              Quiz sobre o casal
+            </span>
+            <span
+              style={{
+                color: "#345870",
+                fontFamily: "JosefinSlab",
+                fontSize: "1.5em",
+              }}
+            >
               Respostas nos cards
             </span>
           </div>
           {quizCards.map((card) => (
             <div
-
               onMouseEnter={() => flipCard(card.name, true)}
               onMouseLeave={() => flipCard(card.name, false)}
             >
@@ -119,24 +137,39 @@ const index = () => {
             </div>
           ))}
         </div>
-
-        </div>
+      </div>
 
       <div className={styles.ourStory}>
         <div className={styles.twoColumn}>
-
-        <CarouselPhotos />
-        <div style={{textAlign: "center"}}>
-        <h1 style={{ color: "#345870", display: "flex", justifyContent: "center" }}>Nossa história</h1>
-        <p style={{ fontSize: "1.2rem", textAlign: "center" }}>
-          Apesar de termos muitos amigos em comum desde o começo da graduação, o universo colocou uma no caminho da outra somente em 2018. Nos conhecemos, nos apaixonamos e desde então nos impulsionamos a ser a melhor versão de nós mesmas. 
-Não poderíamos ter construído uma história tão cheia de amor, união e comprenssão sem os nossos amigos, colegas, mães, pais, irmãos e familiares ao nosso redor. 
-Ficamos imensamente felizes em poder contar com a presença dessas pessoas no dia mais especial de nossas vidas.
-        </p>
+          <CarouselPhotos />
+          <div style={{ textAlign: "center" }}>
+            <h1
+              style={{
+                color: "#345870",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              Nossa história
+            </h1>
+            <p
+              style={{
+                fontFamily: "DreamAvenue",
+                fontSize: "1.2rem",
+                textAlign: "center",
+              }}
+            >
+              Apesar de termos muitos amigos em comum desde o começo da
+              graduação, o universo colocou uma no caminho da outra somente em
+              2018. Nos conhecemos, nos apaixonamos e desde então nos
+              impulsionamos a ser a melhor versão de nós mesmas. Não poderíamos
+              ter construído uma história tão cheia de amor, união e comprenssão
+              sem os nossos amigos, colegas, mães, pais, irmãos e familiares ao
+              nosso redor. Ficamos imensamente felizes em poder contar com a
+              presença dessas pessoas no dia mais especial de nossas vidas.
+            </p>
+          </div>
         </div>
-
-        </div>
-
       </div>
     </section>
   );

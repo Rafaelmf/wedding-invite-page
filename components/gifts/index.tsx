@@ -3,6 +3,7 @@ import { IoGiftSharp, IoSendOutline } from "react-icons/io5";
 import { Card, Divider, Modal, Input, Button, message } from "antd";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Iframe from "react-iframe";
 
 const { Meta } = Card;
 const { TextArea } = Input;
@@ -10,45 +11,65 @@ const { TextArea } = Input;
 type Gift = {
   name: string;
   imgUrl: string;
-  price: number;
+  price?: number;
+  qrCode: string;
 };
 
 const gifts: Gift[] = [
   {
-    name: "Conjunto de talheres",
-    imgUrl:
-      "https://static.ideallar7.com.br/public/ideallar7/imagens/produtos/jogo-talheres-preto-com-dourado-932.jpeg",
+    name: "Jogo de taças de vidros de sobremesa",
+    imgUrl: "/sobremesa.png",
     price: 50,
+    qrCode: "/qr50.png",
   },
   {
-    name: "Copos",
-    imgUrl:
-      "https://www.havan.com.br/media/catalog/product/cache/73a52df140c4d19dbec2b6c485ea6a50/j/o/jogo-de-8-copos-opera-360ml-nadir_310371.jpg",
+    name: "Jogo de Frigideiras",
+    imgUrl: "/frigideira.png",
+    price: 75,
+    qrCode: "/qr75.png",
+  },
+  {
+    name: "Ferro de passar a vapor",
+    imgUrl: "/ferro.png",
     price: 100,
-  },
-  {
-    name: "Jogo de Pratos",
-    imgUrl: "https://cf.shopee.com.br/file/878a49deb9ece4802354e08ceb57bfa5",
-    price: 150,
+    qrCode: "/qr100.png",
   },
 
   {
-    name: "Mala de Viagem",
-    imgUrl:
-      "https://cdn.leroymerlin.com.br/products/mala_viagem_primicia_abs_giro_360o_grande_prata_1567125283_8996_600x600.jpeg",
-    price: 250,
+    name: "Panela de pressão",
+    imgUrl: "/panela.png",
+    price: 125,
+    qrCode: "/qr125.png",
   },
   {
-    name: "Airfryer",
-    imgUrl: "https://m.media-amazon.com/images/I/6143GQhK+IL._AC_SX679_.jpg",
-    price: 400,
+    name: "Fruteira com tampo de granito",
+    imgUrl: "/fruteira.png",
+    price: 150,
+    qrCode: "/qr150.png",
   },
   {
-    name: "Viagem para praia",
-    imgUrl:
-      "https://www.viajali.com.br/wp-content/uploads/2020/04/praia-de-boa-viagem-8-730x730.jpg",
-    price: 2000,
-  }
+    name: "Forno elétrico",
+    imgUrl: "/oven.png",
+    price: 200,
+    qrCode: "/qr200.png",
+  },
+  {
+    name: "Conjunto Mondial",
+    imgUrl: "/mondial.png",
+    price: 300,
+    qrCode: "/qr300.png",
+  },
+  {
+    name: "Jogo de panelas",
+    imgUrl: "/jogo-panela.png",
+    price: 500,
+    qrCode: "/qr500.png",
+  },
+  {
+    name: "Qualquer valor",
+    imgUrl: "/love.png",
+    qrCode: "/qr.png",
+  },
 ];
 
 const index = () => {
@@ -88,35 +109,54 @@ const index = () => {
         setMessageTxt("");
       });
   };
+
   return (
     <>
       <div className={styles.gifts}>
-        <h1 style={{ color: "#2F4858" }}>
+        <h1 style={{ color: "#345870" }}>
           <IoGiftSharp className="icon" />
           Lista de Presentes
         </h1>
+        <p style={{ textAlign: "center" }}>
+          A sua presença é o maior e melhor presente que poderíamos receber.{" "}
+          <br />
+          Deixamos aqui algumas sugestões de outros presentes, caso você queira
+          e possa nos presentear.
+          <br />
+          <br />
+        </p>
         <div className={styles.giftsGrid}>
           {gifts.map((g) => (
             <Card
               onClick={() => openModal(g)}
               key={g.name}
               hoverable
-              style={{ width: "15em", borderRadius: "15px 0px 0px" }}
+              style={{
+                width: "17em",
+                padding: "1em",
+                borderRadius: "20px",
+              }}
               cover={
                 <img
-                  style={{ borderRadius: "15px 15px 0 0" }}
+                  height={170}
+                  // width={50}
+                  style={{ borderRadius: "20px 20px 0 0" }}
                   alt={g.name}
                   src={g.imgUrl}
                 />
               }
-              actions={[
-                <span>
-                  <IoGiftSharp className="icon" />
-                  Presentear
-                </span>,
-              ]}
             >
-              <Meta title={g.name} description={`R$ ${g.price.toFixed(2)}`} />
+              <div className={styles.cardContent}>
+                <p>{g.name}</p>
+                {g.price && <p>{`R$ ${g.price.toFixed(2)}`}</p>}
+                <Button
+                  type="primary"
+                  shape="round"
+                  icon={<IoGiftSharp size={18} className="icon" />}
+                >
+                  Presentear
+                </Button>
+              </div>
             </Card>
             // <CardGift />
           ))}
@@ -128,7 +168,7 @@ const index = () => {
             title={
               <h2 style={{ color: "#2F4858" }}>
                 <IoGiftSharp className="icon" />
-                Presentear {currGift.name}
+                {currGift.name}
               </h2>
             }
             visible={true}
@@ -143,13 +183,15 @@ const index = () => {
                   alignItems: "center",
                 }}
               >
-                <p style={{ fontSize: "1.5em" }}>
-                  Para realizar a transferência de R${currGift.price} utilize o
-                  QRCode abaixo:
-                </p>
+                {currGift.price && (
+                  <p style={{ fontSize: "1.5em" }}>
+                    Para realizar a transferência de R${currGift.price} utilize
+                    o QRCode abaixo:
+                  </p>
+                )}
                 <img
                   style={{ height: "15em", width: "15em" }}
-                  src="./qrcode.png"
+                  src={currGift.qrCode}
                 ></img>
                 <p style={{ marginTop: "1em" }}>
                   ou, utilize a nossa chave pix (11) 9961689816
@@ -162,10 +204,12 @@ const index = () => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  gap: "20px",
+                  gap: "10px",
                 }}
               >
-                <p style={{ fontSize: "1.5em" }}>Deixe uma mensagem </p>
+                <p style={{ fontSize: "1.7em", margin: 0 }}>
+                  Deixe uma mensagem
+                </p>
                 <form className={styles.form} ref={form} onSubmit={sendEmail}>
                   <label>Nome:</label>
                   <Input
@@ -190,8 +234,8 @@ const index = () => {
                       display: "flex",
                       gap: "5px",
                       alignItems: "center",
-                      color: "#C0975F",
-                      backgroundColor: "#2F4858",
+                      color: "white",
+                      backgroundColor: "#345870",
                       justifyContent: "center",
                     }}
                     loading={loading}
