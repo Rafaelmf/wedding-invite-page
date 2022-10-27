@@ -76,44 +76,9 @@ const index = () => {
                 </Link>
               </div>
 
-              {/* <img
-                className={styles.armazemPicture}
-                src="https://media-cdn.tripadvisor.com/media/photo-s/1b/b3/db/5e/armazem-de-maria.jpg"
-              /> */}
-
               <div className={styles.mapCenter}>
                 <DynamicMapWithNoSSR />
               </div>
-
-              {/* <div className={styles.socialDiv}>
-                <div className={styles.socialMediaDiv}>
-                  <Link
-                    target="_blank"
-                    href="https://www.facebook.com/espacoarmazemdemaria/"
-                  >
-                    <AiOutlineFacebook size={30} className={styles.icons} />
-                  </Link>
-                  <p className={styles.socialTxt}>/espacoarmazemdemaria</p>
-                </div>
-                <div className={styles.socialMediaDiv}>
-                  <Link
-                    target="_blank"
-                    href="https://www.instagram.com/espacoarmazemdemaria/?hl=en"
-                  >
-                    <AiOutlineInstagram size={30} className={styles.icons} />
-                  </Link>
-                  <p className={styles.socialTxt}>@espacoarmazemdemaria</p>
-                </div>
-                <div className={styles.socialMediaDiv}>
-                  <Link
-                    target="_blank"
-                    href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5516991580024%26app%3Dfacebook%26entry_point%3Dpage_cta&h=AT0SqEqnhGa-b8Ftd8mJf4W7o_ToZqEW3oGVxBoXPAG3nE19uvMmaLBu0QPd3UXBTayWzKTZkTRwHgIKPXRDUp5u6d5fzEGv5wVTZdQp7VSdsrGkp-MylRW2f9GNNKHRFrbkOXoHq_oDEFyNkuIbaCYDW9AeutMH2EVLpolUGYU"
-                  >
-                    <AiOutlineWhatsApp size={30} className={styles.icons} />
-                  </Link>
-                  <p className={styles.socialTxt}>+55 16 99158-0024</p>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>

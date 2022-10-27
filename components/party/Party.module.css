@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
   padding: 2em 2em;
 
 }
@@ -31,8 +31,8 @@
 }
 
 .map {
-  height: 350px;
-  width: 600px;
+  height: 50vh;
+  width: 40vw;
   background-color: white;
 }
 
@@ -47,10 +47,21 @@
 @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
 }
-@media (max-width:800px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (max-width: 1200px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 
-  .mapCenter, .timer, .socialTxt, .avatar, .armazemPicture {
+   .timer, .socialTxt, .avatar, .armazemPicture {
     display: none !important;
+  }
+
+  .map {
+    height: 40vh;
+    width: 60vw;
+  }
+
+  .party {
+    height: 130vh;
+    padding: 0.8em;
+  
   }
 
   .partyInternal {
@@ -64,23 +75,12 @@
   .locationContainer {
     grid-template-columns: 1fr !important;
   }
-}
-@media (max-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-  .map {
-    height: 20px;
-    width: 30px;
-  }
-}
-@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
-
-  .map {
-    height: 350px;
-    width: 530px;
-  }
-
   .partyInternal {
     grid-template-columns: 1fr !important;
   }
+}
+@media (max-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
 }
 
 .locationContainer {
