@@ -1,5 +1,6 @@
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import moment from "moment";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
@@ -43,12 +44,12 @@ const getTimeHours = (time: number) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time: number) => (time / daySeconds) | 0;
 
 const TimerCountDown = () => {
-  const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = new Date(2023, 4, 22, 8).getTime() / 1000; // use UNIX timestamp in seconds
+  const startTime = moment();
+  const endTime = moment("2023-4-22");
+  const Difference_In_Time = endTime.diff(startTime);
+  const Difference_In_Days = endTime.diff(startTime, "days");
 
-  const remainingTime = endTime - stratTime;
-  const days = Math.ceil(remainingTime / daySeconds);
-  const daysDuration = days * daySeconds;
+  const daysDuration = Difference_In_Days * daySeconds;
 
   return (
     <div
@@ -65,11 +66,11 @@ const TimerCountDown = () => {
         colors="#fd4600"
         trailColor="#f2f2f2"
         duration={daysDuration}
-        initialRemainingTime={remainingTime}
+        initialRemainingTime={Difference_In_Time}
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("Dias", getTimeDays(daysDuration - elapsedTime))}
+            {renderTime("Dias", getTimeDays(daysDuration))}
           </span>
         )}
       </CountdownCircleTimer>
@@ -78,9 +79,9 @@ const TimerCountDown = () => {
         colors="#ffb400"
         trailColor="#f2f2f2"
         duration={daySeconds}
-        initialRemainingTime={remainingTime % daySeconds}
+        initialRemainingTime={Difference_In_Time % daySeconds}
         onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > hourSeconds,
+          shouldRepeat: Difference_In_Time - totalElapsedTime > hourSeconds,
         })}
       >
         {({ elapsedTime, color }) => (
@@ -94,9 +95,9 @@ const TimerCountDown = () => {
         colors="#00a364"
         trailColor="#f2f2f2"
         duration={hourSeconds}
-        initialRemainingTime={remainingTime % hourSeconds}
+        initialRemainingTime={Difference_In_Time % hourSeconds}
         onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > minuteSeconds,
+          shouldRepeat: Difference_In_Time - totalElapsedTime > minuteSeconds,
         })}
       >
         {({ elapsedTime, color }) => (
@@ -110,9 +111,9 @@ const TimerCountDown = () => {
         colors="#0075cb"
         trailColor="#f2f2f2"
         duration={minuteSeconds}
-        initialRemainingTime={remainingTime % minuteSeconds}
+        initialRemainingTime={Difference_In_Time % minuteSeconds}
         onComplete={(totalElapsedTime) => ({
-          shouldRepeat: remainingTime - totalElapsedTime > 0,
+          shouldRepeat: Difference_In_Time - totalElapsedTime > 0,
         })}
       >
         {({ elapsedTime, color }: any) => (
