@@ -17,17 +17,17 @@
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)) ;  
-  row-gap: 2em;
+  row-gap: 1.4em;
   justify-items: center;
-  top: 102vh;
+  top: 105vh;
   position: absolute
 }
 
 .quizCard {
-  width: 15em;
-  height: 15em;
+  width: 14.5em;
+  height: 14.5em;
   display: flex;
-  padding: 1.2em;
+  padding: 1em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -49,7 +49,7 @@
 }
 
 .quizCardBody {
-  font-size: 1.3em;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@
 }
 
 .backTxt {
-  font-size: 1.3em;
+  font-size: 1em;
   color: #fffdef;
   margin-bottom: 0 !important;
 }
@@ -112,8 +112,8 @@
   color: #fff;
   background: #f2f2f2;
   display: flex !important;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .twoColumn {

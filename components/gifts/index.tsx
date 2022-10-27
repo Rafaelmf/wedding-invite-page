@@ -134,7 +134,7 @@ const index = () => {
               style={{
                 width: "18em",
                 height: "24em",
-                padding: "0.4em",
+                padding: "1em",
                 borderRadius: "20px",
                 display: "flex",
                 flexDirection: "column",

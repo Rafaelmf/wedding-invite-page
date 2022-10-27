@@ -86,7 +86,7 @@ const index = () => {
               style={{
                 color: "#345870",
                 fontFamily: "DreamAvenue",
-                fontSize: "6em",
+                fontSize: "5em",
                 textAlign: "center",
               }}
             >
