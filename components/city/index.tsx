@@ -37,7 +37,7 @@ const beauty = [
   {
     title: "Espaço New Bella",
     description:
-      "Espaço de beleza no centro de São Carlos com serviços de cabelo, depilação, design de sobrancelhas, maquiagem e unhas. (16 99730-7118)",
+      "Espaço de beleza com serviços de cabelo, depilação, design de sobrancelhas, maquiagem e unhas. (16 99730-7118)",
     imageUrl:
       "https://s3.sa-east-1.amazonaws.com/nacionalinn-site/imgs/galeria/nacional-inn-sao-carlos/nacional_inn_sao_carlos_fachada.jpg",
     link: "https://www.instagram.com/espaconewbella/",
@@ -133,20 +133,11 @@ const getListComponent = (list: any) => (
             if (window === null) return;
             window.open(f.link, "_blank")?.focus();
           }}
-          // extra={
-          //   <img
-          //     style={{ width: "6em", height: "5em", margin: 0 }}
-          //     width={150}
-          //     height={100}
-          //     alt="logo"
-          //     src={f.imageUrl}
-          //   />
-          // }
         >
           <List.Item.Meta
             title={
               <>
-                <a href={f.link}>{f.title}</a>
+                <span>{f.title}</span>
                 <AiOutlineLink style={{ marginLeft: "5px" }} />
               </>
             }

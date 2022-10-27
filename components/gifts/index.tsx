@@ -132,9 +132,13 @@ const index = () => {
               key={g.name}
               hoverable
               style={{
-                width: "17em",
-                padding: "1em",
+                width: "18em",
+                height: "24em",
+                padding: "0.4em",
                 borderRadius: "20px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "flex-end",
               }}
               cover={
                 <img
@@ -148,7 +152,11 @@ const index = () => {
             >
               <div className={styles.cardContent}>
                 <p>{g.name}</p>
-                {g.price && <p>{`R$ ${g.price.toFixed(2)}`}</p>}
+                {g.price && (
+                  <p>{`R$ ${g.price.toLocaleString("pt-br", {
+                    minimumFractionDigits: 0,
+                  })}`}</p>
+                )}
                 <Button
                   type="primary"
                   shape="round"

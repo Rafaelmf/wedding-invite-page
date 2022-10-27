@@ -18,7 +18,18 @@ const Map = () => {
   }, []);
 
   return (
-    <div className={styles.map}>
+    <div
+      onClick={() => {
+        if (window === null) return;
+        window
+          .open(
+            "https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005",
+            "_blank"
+          )
+          ?.focus();
+      }}
+      className={styles.map}
+    >
       <MapContainer
         center={[-22.0173669, -47.8567228]}
         zoom={15}

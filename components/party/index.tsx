@@ -39,10 +39,7 @@ const index = () => {
       <div className={styles.party}>
         <div className={styles.partyInternal}>
           <div style={{ textAlign: "center" }}>
-            <h1 className={styles.titleParty}>
-              {/* <AiOutlineClockCircle className="icon" />  */}
-              Quando ?
-            </h1>
+            <h1 className={styles.titleParty}>Quando ?</h1>
             <p style={{ marginBottom: "0" }}>22/04/2023</p>
             <p>Início às 08h30</p>
 
@@ -54,10 +51,7 @@ const index = () => {
           <Divider type="vertical" />
 
           <div>
-            <h1 className={styles.titleParty}>
-              {/* <IoLocationOutline className="icon" /> */}
-              Onde ?
-            </h1>
+            <h1 className={styles.titleParty}>Onde ?</h1>
 
             <div className={styles.locationContainer}>
               <div className={styles.avatarSpan}>
@@ -66,7 +60,6 @@ const index = () => {
                   target="_blank"
                   href="https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005"
                 >
-                  {/* <FaMapMarkedAlt style={{marginRight: "10px"}} size={30} className={styles.icons} /> */}
                   Espaço Armazém de Maria
                 </a>
                 <Link
