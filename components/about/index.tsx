@@ -73,16 +73,7 @@ const index = () => {
         />
 
         <div className={styles.quizDiv}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gridRow: "1 / span 3",
-              gridColumn: "1 / span 2",
-            }}
-          >
+          <div className={styles.quizTitle}>
             <span
               style={{
                 color: "#345870",
