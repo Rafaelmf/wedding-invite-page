@@ -160,7 +160,7 @@ const index = () => {
               style={{ height: "4em", margin: "0.5em" }}
               src="./svg-icons/hotel-bell.svg"
             ></img>
-            <h1 style={{ margin: 0 }}>Hospedagem</h1>
+            <h1 style={{ margin: 0, fontSize: "2em" }}>Hospedagem</h1>
             <>{getListComponent(accomodationList)}</>
           </div>
           <div style={{ borderRadius: "15px" }}>
@@ -168,7 +168,7 @@ const index = () => {
               style={{ height: "4em", margin: "0.5em" }}
               src="./svg-icons/hair-dryer.svg"
             ></img>
-            <h1 style={{ margin: 0 }}>Salão de Beleza </h1>
+            <h1 style={{ margin: 0, fontSize: "2em" }}>Salão de Beleza </h1>
             <>{getListComponent(beauty)}</>
           </div>
           <div style={{ borderRadius: "15px" }}>
@@ -176,7 +176,7 @@ const index = () => {
               style={{ height: "4em", margin: "0.5em" }}
               src="./svg-icons/restaurant.svg"
             ></img>
-            <h1 style={{ margin: 0 }}>Restaurantes</h1>
+            <h1 style={{ margin: 0, fontSize: "2em" }}>Restaurantes</h1>
             <>{getListComponent(foodList)}</>
           </div>
           <div style={{ borderRadius: "15px" }}>
@@ -184,7 +184,7 @@ const index = () => {
               style={{ height: "4em", margin: "0.5em" }}
               src="./svg-icons/coffee.svg"
             ></img>
-            <h1 style={{ margin: 0 }}>Cafés e padarias</h1>
+            <h1 style={{ margin: 0, fontSize: "2em" }}>Cafés e padarias</h1>
             <>{getListComponent(drinkList)}</>
           </div>
         </div>

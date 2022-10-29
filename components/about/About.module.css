@@ -43,13 +43,26 @@
 
 }
 
-.quizTitle {
+.quizTitleDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   grid-row: 1 / span 3;
   grid-column: 1 / span 2;
+}
+
+.quizTitleHeading {
+  color: #345870;
+  font-family: DreamAvenue;
+  font-size: 5.5em;
+  text-align: center;
+}
+
+.quizDescription {
+  color: #345870;
+  font-family: JosefinSlab;
+  font-size: 2em;
 }
 
 .backQuizCard {
@@ -132,7 +145,7 @@
   grid-template-columns: 2fr 1.3fr;
 }
 
-@media (max-width:800px)  { 
+@media (max-width:1200px)  { 
   .carouselDiv {
     display: none;
   }
@@ -147,9 +160,27 @@
   .ourStory {
     padding: 20px;
   }
-  .quizTitle {
+  .quizTitleDiv {
+    top: -30px;
     grid-column: 1;
   }
+  .quizTitleHeading {
+    font-size: 3em;
+  }
+  .quizDescription {
+    font-size: 1em;
+  }
+  .cropContainer{
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+  } 
+  .cropContainer img{
+    width: 100%;
+    height: 400px;
+  }
+
 }
 
 .carouselDiv {

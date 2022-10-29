@@ -194,7 +194,7 @@ const index = () => {
                 {currGift.price && (
                   <p style={{ fontSize: "1.5em" }}>
                     Para realizar a transferência de R${currGift.price} utilize
-                    o QRCode abaixo:
+                    a função 'Ler QRcode' do seu aplicativo de banco:
                   </p>
                 )}
                 <img
@@ -202,7 +202,7 @@ const index = () => {
                   src={currGift.qrCode}
                 ></img>
                 <p style={{ marginTop: "1em" }}>
-                  ou, utilize a nossa chave pix (11) 9961689816
+                  ou, utilize a nossa chave pix (16) 98234-8909
                 </p>
               </div>
               <Divider type="vertical" />

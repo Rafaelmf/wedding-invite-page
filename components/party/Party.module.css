@@ -3,12 +3,12 @@
   color: #f2f2f2;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   width: 100vw;
   max-width: 100%;
-  padding: 2em 2em;
+  padding: 1.5em 1.5em;
 
 }
 
@@ -23,11 +23,17 @@
   /* border: 1px solid #EB9928; */
 }
 
-.partyInternal * p {
+.partyInternal *  a {
   color: #bd968f;
   font-family: "JosefinSlab";
   font-weight: bolder;
-  font-size: 1.8em;
+  font-size: 1.5em;
+}
+.partyInternal * p  {
+  color: #bd968f;
+  font-family: "JosefinSlab";
+  font-weight: bolder;
+  font-size: 1.5em;
 }
 
 .map {
@@ -59,9 +65,19 @@
   }
 
   .party {
-    height: 130vh;
-    padding: 0.8em;
+    height: 140vh;
+    padding: 0.5em;
   
+  }
+
+  .titleParty {
+    font-size: 2.5em;
+  }
+  .partyInternal * p {
+    font-size: 1.2em;
+  }
+  .partyInternal * a {
+    font-size: 1.2em;
   }
 
   .partyInternal {
@@ -115,7 +131,7 @@
 .titleParty {
   color:#f2f2f2;
   justify-content: center;
-  font-size: 4.5em;
+  font-size: 4em;
   
   /* font-family: "Halimun"; */
   

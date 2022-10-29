@@ -56,11 +56,10 @@ const index = () => {
             <div className={styles.locationContainer}>
               <div className={styles.avatarSpan}>
                 <a
-                  style={{ fontSize: "1.8em" }}
                   target="_blank"
                   href="https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005"
                 >
-                  Espaço Armazém de Maria
+                  São Carlos - SP
                 </a>
                 <Link
                   target="_blank"

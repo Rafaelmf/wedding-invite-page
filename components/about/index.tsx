@@ -65,34 +65,19 @@ const index = () => {
     <section style={{ paddingTop: "0" }}>
       {/* <div style={{ width: "100%", height: "93vh" }}></div> */}
       <div style={{ position: "relative" }}>
-        <img
-          style={{ zIndex: -1 }}
-          className={styles.image}
-          src="/front.png"
-          alt="Main Photo"
-        />
+        <div className={styles.cropContainer}>
+          <img
+            style={{ zIndex: -1 }}
+            className={styles.image}
+            src="/front.png"
+            alt="Main Photo"
+          />
+        </div>
 
         <div className={styles.quizDiv}>
-          <div className={styles.quizTitle}>
-            <span
-              style={{
-                color: "#345870",
-                fontFamily: "DreamAvenue",
-                fontSize: "6em",
-                textAlign: "center",
-              }}
-            >
-              Quiz sobre o casal
-            </span>
-            <span
-              style={{
-                color: "#345870",
-                fontFamily: "JosefinSlab",
-                fontSize: "2em",
-              }}
-            >
-              Respostas nos cards
-            </span>
+          <div className={styles.quizTitleDiv}>
+            <span className={styles.quizTitleHeading}>Quiz sobre o casal</span>
+            <span className={styles.quizDescription}>Respostas nos cards</span>
           </div>
           {quizCards.map((card) => (
             <div
