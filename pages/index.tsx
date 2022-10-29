@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <title>Julia e Giovana</title>
         <meta
           name="description"
-          content="Página de convite do casamento de Geiovana e Julia"
+          content="Página de convite do casamento de Júlia e Giovana"
         />
         <link rel="icon" href="/rings2.ico" />
 
