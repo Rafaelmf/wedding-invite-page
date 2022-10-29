@@ -80,13 +80,14 @@ const index = () => {
               alignItems: "center",
               justifyContent: "center",
               gridRow: "1 / span 3",
+              gridColumn: "1 / span 2",
             }}
           >
             <span
               style={{
                 color: "#345870",
                 fontFamily: "DreamAvenue",
-                fontSize: "5em",
+                fontSize: "6em",
                 textAlign: "center",
               }}
             >
@@ -96,7 +97,7 @@ const index = () => {
               style={{
                 color: "#345870",
                 fontFamily: "JosefinSlab",
-                fontSize: "1.5em",
+                fontSize: "2em",
               }}
             >
               Respostas nos cards

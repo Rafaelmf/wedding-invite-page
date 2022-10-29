@@ -50,6 +50,7 @@ const TimerCountDown = () => {
   const Difference_In_Days = endTime.diff(startTime, "days");
 
   const daysDuration = Difference_In_Days * daySeconds;
+  console.log(daysDuration / daySeconds);
 
   return (
     <div
@@ -66,11 +67,11 @@ const TimerCountDown = () => {
         colors="#fd4600"
         trailColor="#f2f2f2"
         duration={daysDuration}
-        initialRemainingTime={Difference_In_Time}
+        initialRemainingTime={daysDuration}
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("Dias", getTimeDays(daysDuration))}
+            {renderTime("Dias", Difference_In_Days)}
           </span>
         )}
       </CountdownCircleTimer>

@@ -16,7 +16,7 @@
   padding: 5%;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)) ;  
+  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));  
   row-gap: 1.4em;
   justify-items: center;
   top: 105vh;
@@ -24,8 +24,8 @@
 }
 
 .quizCard {
-  width: 14.5em;
-  height: 14.5em;
+  width: 13em;
+  height: 13em;
   display: flex;
   padding: 1em;
   flex-direction: column;
