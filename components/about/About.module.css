@@ -159,7 +159,7 @@
   color: #345870;
   display: flex;
   justify-content: center;
-  margin-left: 75px;
+  margin-left: 120px;
 }
 
 .ourStoryTitle * svg {
@@ -215,6 +215,9 @@
   }
   .image {
     display: none;
+  }
+  .ourStoryTitle {
+    width: 60%;
   }
 
   /* .cropContainer{

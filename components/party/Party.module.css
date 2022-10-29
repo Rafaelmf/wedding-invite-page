@@ -65,9 +65,8 @@
   }
 
   .party {
-    height: 140vh;
-    padding: 0.5em;
-  
+    height: 100%;
+    padding: 3em 0.5em;
   }
 
   .titleParty {
