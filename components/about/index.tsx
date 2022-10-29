@@ -14,36 +14,39 @@ import styles from "./About.module.css";
 import { CgGym } from "react-icons/cg";
 import CarouselPhotos from "./Carousel";
 
+import Lottie from "react-lottie";
+import * as animationData from "../../public/json/love.json";
+
 const quizCards = [
   {
     name: "pet",
     descriptionFront: "Qual o nome dos nossos pets?",
     descriptionBack: "Potter e Aria",
-    icon: <MdOutlinePets style={{ fontSize: "3em" }} color={"#345870"} />,
+    icon: <MdOutlinePets style={{ fontSize: "3em" }} color={"#f2f2f2"} />,
   },
   {
     name: "gossip",
     descriptionFront: "O que mais gostamos de fazer?",
     descriptionBack: "Fofocar hehe",
-    icon: <GiConversation style={{ fontSize: "3em" }} color={"#345870"} />,
+    icon: <GiConversation style={{ fontSize: "3em" }} color={"#f2f2f2"} />,
   },
   {
     name: "proposal",
     descriptionFront: "Onde nós noivamos?",
     descriptionBack: "São Bento do Sapucaí - SP",
-    icon: <GiBigDiamondRing style={{ fontSize: "3em" }} color={"#345870"} />,
+    icon: <GiBigDiamondRing style={{ fontSize: "3em" }} color={"#f2f2f2"} />,
   },
   {
     name: "trip",
     descriptionFront: "Qual foi a nossa viagem mais marcante?",
     descriptionBack: "Paris, 2019",
-    icon: <GiBackpack style={{ fontSize: "3em" }} color={"#345870"} />,
+    icon: <GiBackpack style={{ fontSize: "3em" }} color={"#f2f2f2"} />,
   },
   {
     name: "food",
     descriptionFront: "Qual a nossa comida favorita?",
     descriptionBack: "Churrasco",
-    icon: <GiBarbecue style={{ fontSize: "3em" }} color={"#345870"} />,
+    icon: <GiBarbecue style={{ fontSize: "3em" }} color={"#f2f2f2"} />,
   },
 ];
 
@@ -61,15 +64,29 @@ const index = () => {
     });
   };
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <section style={{ paddingTop: "0" }}>
-      {/* <div style={{ width: "100%", height: "93vh" }}></div> */}
       <div style={{ position: "relative" }}>
-        <div className={styles.cropContainer}>
+        <div id="mydiv">
           <img
             style={{ zIndex: -1 }}
             className={styles.image}
             src="/front.png"
+            alt="Main Photo"
+          />
+          <img
+            style={{ zIndex: -1 }}
+            className={styles.imageMobile}
+            src="/front_mobile.png"
             alt="Main Photo"
           />
         </div>
@@ -104,14 +121,10 @@ const index = () => {
       <div className={styles.ourStory}>
         <div className={styles.twoColumn}>
           <CarouselPhotos />
-          <div style={{ textAlign: "center" }}>
-            <h1
-              style={{
-                color: "#345870",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
+          <div className={styles.ourStoryDiv}>
+            <Lottie options={defaultOptions} height={320} width={130} />
+
+            <h1 className={styles.ourStoryTitle} style={{}}>
               Nossa história
             </h1>
             <p

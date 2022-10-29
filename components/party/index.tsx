@@ -15,11 +15,22 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import { Divider, Avatar } from "antd";
 import Link from "antd/lib/typography/Link";
 
+import Lottie from "react-lottie";
+import * as calendar from "../../public/json/calendar.json";
+import * as map from "../../public/json/map.json";
+
 const index = () => {
   const DynamicMapWithNoSSR = dynamic(
     () => import("./MapComponent"), // replace '@components/map' with your component's location
     { ssr: false } // This line is important. It's what prevents server-side render
   );
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <section style={{ backgroundColor: "#f2f2f2" }}>
       <div className={styles.SvgDivider}>
@@ -51,7 +62,14 @@ const index = () => {
           <Divider type="vertical" />
 
           <div>
-            <h1 className={styles.titleParty}>Onde ?</h1>
+            <h1 className={styles.titleParty}>
+              <Lottie
+                options={{ ...defaultOptions, animationData: map }}
+                height={90}
+                width={110}
+              />
+              Onde ?
+            </h1>
 
             <div className={styles.locationContainer}>
               <div className={styles.avatarSpan}>
@@ -59,7 +77,7 @@ const index = () => {
                   target="_blank"
                   href="https://www.google.com/maps/place/Armazem+de+Maria/@-22.0174671,-47.8582099,17z/data=!3m1!4b1!4m5!3m4!1s0x94b8769665c9da1b:0x1e70e60b33f58043!8m2!3d-22.01747!4d-47.8560005"
                 >
-                  São Carlos - SP
+                  Espaço Armazém de Maria (São Carlos - SP)
                 </a>
                 <Link
                   target="_blank"

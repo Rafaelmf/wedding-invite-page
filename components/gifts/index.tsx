@@ -4,6 +4,9 @@ import { Card, Divider, Modal, Input, Button, message } from "antd";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Iframe from "react-iframe";
+import Lottie from "react-lottie";
+import * as animationData from "../../public/json/gift.json";
+import * as loveAnimation from "../../public/json/loveAnimation.json";
 
 const { Meta } = Card;
 const { TextArea } = Input;
@@ -110,11 +113,21 @@ const index = () => {
       });
   };
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <>
       <div className={styles.gifts}>
-        <h1 style={{ color: "#345870" }}>
-          <IoGiftSharp className="icon" />
+        <h1 style={{ color: "#345870", textAlign: "center" }}>
+          <Lottie options={defaultOptions} height={140} width={100} />
+          {/* <IoGiftSharp className="icon" /> */}
           Lista de Presentes
         </h1>
         <p style={{ textAlign: "center" }}>
@@ -191,12 +204,11 @@ const index = () => {
                   alignItems: "center",
                 }}
               >
-                {currGift.price && (
-                  <p style={{ fontSize: "1.5em" }}>
-                    Para realizar a transferência de R${currGift.price} utilize
-                    a função 'Ler QRcode' do seu aplicativo de banco:
-                  </p>
-                )}
+                <h2 className={styles.paymentDescription}>
+                  Para realizar a transferência de{" "}
+                  {currGift.price ? `R${currGift.price}` : "qualquer valor"}{" "}
+                  utilize a função 'Ler QRcode' do seu aplicativo de banco:
+                </h2>
                 <img
                   style={{ height: "15em", width: "15em" }}
                   src={currGift.qrCode}
@@ -215,9 +227,19 @@ const index = () => {
                   gap: "10px",
                 }}
               >
-                <p style={{ fontSize: "1.7em", margin: 0 }}>
-                  Deixe uma mensagem
-                </p>
+                <h2 className={styles.paymentDescription}>
+                  <Lottie
+                    options={{
+                      ...defaultOptions,
+                      animationData: loveAnimation,
+                    }}
+                    height={70}
+                    width={70}
+                  />
+                  Deixe uma mensagem para as noivas
+                </h2>
+
+                {/* <p style={{ fontSize: "1.7em", margin: 0 }}></p> */}
                 <form className={styles.form} ref={form} onSubmit={sendEmail}>
                   <label>Nome:</label>
                   <Input

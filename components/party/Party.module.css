@@ -71,7 +71,7 @@
   }
 
   .titleParty {
-    font-size: 2.5em;
+    font-size: 2.5em !important;
   }
   .partyInternal * p {
     font-size: 1.2em;
@@ -115,6 +115,14 @@
   grid-column: 1 ;
   color: #bd968f;
   font-family: "JosefinSlab";
+}
+
+.avatarSpan > a {
+  text-decoration: underline;
+}
+
+.avatarSpan > a:hover {
+  color: #f4a89b;
 }
 
 .armazemPicture {

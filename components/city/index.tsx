@@ -2,6 +2,8 @@ import { List, Rate } from "antd";
 import { AiOutlineLink } from "react-icons/ai";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import styles from "./City.module.css";
+import Lottie from "react-lottie";
+import * as beautyAnimation from "../../public/json/beauty.json";
 
 const accomodationList = [
   {
@@ -148,11 +150,22 @@ const getListComponent = (list: any) => (
     </List>
   </div>
 );
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: beautyAnimation,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 const index = () => {
   return (
     <>
       <div className={styles.location}>
-        <h1 style={{ color: "#F9F9F9" }}>Recomendações das noivas</h1>
+        <h1 className={styles.cityTitle}>
+          {/* <Lottie options={defaultOptions} height={150} width={120} /> */}
+          Recomendações das noivas
+        </h1>
 
         <div className={styles.locationInternal}>
           <div style={{ borderRadius: "15px" }}>

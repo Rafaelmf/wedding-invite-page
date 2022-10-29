@@ -67,10 +67,21 @@
   border-color: #9f573b99;
 }
 
+.paymentDescription {
+  font-size: 1.3em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width:800px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 
   .modalContainer {
     grid-template-columns: 1fr;
+  }
+
+  .paymentDescription > div {
+    display: none;
   }
   
 }
