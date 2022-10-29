@@ -38,11 +38,6 @@ const Home: NextPage = () => {
           @import
           url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
         </style>
-
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap');
-        </style>
       </Head>
 
       <main className="main">

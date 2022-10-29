@@ -159,7 +159,7 @@
   color: #345870;
   display: flex;
   justify-content: center;
-  margin-left: 50px;
+  margin-left: 75px;
 }
 
 .ourStoryTitle * svg {
@@ -173,20 +173,13 @@
 
 @media (max-width:1650px)  { 
   .quizDiv {
-    top: 105vh;
+    top: 125vh;
   }
 }
-@media (max-width:1500px)  { 
-  .quizDiv {
-    top: 80vh;
-  }
-}
+
 @media (max-width:1400px)  { 
   .quizTitleDiv {
     grid-column: 1;
-  }
-  .quizDiv {
-    top: 70vh;
   }
 }
 @media (max-width:1250px)  { 
@@ -195,7 +188,7 @@
   }
   .quizDiv {
     position: unset;
-    top: 105vh;
+    top: 125vh;
   }
   .twoColumn {
     display: grid;

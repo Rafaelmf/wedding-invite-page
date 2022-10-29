@@ -124,9 +124,7 @@ const index = () => {
           <div className={styles.ourStoryDiv}>
             <Lottie options={defaultOptions} height={320} width={130} />
 
-            <h1 className={styles.ourStoryTitle} style={{}}>
-              Nossa história
-            </h1>
+            <h1 className={styles.ourStoryTitle}>Nossa história</h1>
             <p
               style={{
                 fontFamily: "DreamAvenue",

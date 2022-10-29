@@ -3,7 +3,7 @@ import { AiOutlineLink } from "react-icons/ai";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import styles from "./City.module.css";
 import Lottie from "react-lottie";
-import * as beautyAnimation from "../../public/json/beauty.json";
+import * as recommend from "../../public/json/recommend.json";
 
 const accomodationList = [
   {
@@ -153,7 +153,7 @@ const getListComponent = (list: any) => (
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: beautyAnimation,
+  animationData: recommend,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },
@@ -163,7 +163,7 @@ const index = () => {
     <>
       <div className={styles.location}>
         <h1 className={styles.cityTitle}>
-          {/* <Lottie options={defaultOptions} height={150} width={120} /> */}
+          <Lottie options={defaultOptions} height={100} width={100} />
           Recomendações das noivas
         </h1>
 

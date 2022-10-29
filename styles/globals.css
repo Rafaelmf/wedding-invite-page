@@ -5,10 +5,10 @@
   src: url("../fonts/DreamAvenue.ttf") format("truetype");
 }
 
-/* @font-face{
+@font-face{
   font-family: "JosefinSlab";
   src: url("../fonts/JosefinSlab.ttf") format("truetype");
-} */
+}
 
 @font-face{
   font-family: "OpenSansLight";
