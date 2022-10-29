@@ -16,7 +16,6 @@ import { Divider, Avatar } from "antd";
 import Link from "antd/lib/typography/Link";
 
 import Lottie from "react-lottie";
-import * as calendar from "../../public/json/calendar.json";
 import * as map from "../../public/json/map.json";
 
 const index = () => {
