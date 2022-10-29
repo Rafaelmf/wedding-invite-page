@@ -152,7 +152,7 @@
 
 .ourStoryDiv > div[aria-label="animation"] {
   position: absolute;
-  top: -120px
+  top: -110px
 }
 
 .ourStoryTitle {
@@ -228,7 +228,7 @@
     height: 400px;
   } */
   .ourStoryDiv > div[aria-label="animation"] {
-    top: -80px
+    top: -70px
   }
 
 }

@@ -122,7 +122,7 @@ const index = () => {
         <div className={styles.twoColumn}>
           <CarouselPhotos />
           <div className={styles.ourStoryDiv}>
-            <Lottie options={defaultOptions} height={320} width={130} />
+            <Lottie options={defaultOptions} height={300} width={120} />
 
             <h1 className={styles.ourStoryTitle}>Nossa história</h1>
             <p
