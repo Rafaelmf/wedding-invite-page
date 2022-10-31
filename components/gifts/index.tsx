@@ -206,7 +206,7 @@ const index = () => {
               >
                 <h2 className={styles.paymentDescription}>
                   Para realizar a transferência de{" "}
-                  {currGift.price ? `R${currGift.price}` : "qualquer valor"}{" "}
+                  {currGift.price ? `R$ ${currGift.price}` : "qualquer valor"}{" "}
                   utilize a função 'Ler QRcode' do seu aplicativo de banco:
                 </h2>
                 <img
