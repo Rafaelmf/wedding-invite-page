@@ -1,0 +1,81 @@
+.location {
+  background-color: #345870;
+  color: #d8d8d8;
+  flex-direction: column;
+  align-items: center;
+  /* height: 70vh; */
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  max-width:100%;
+  padding: 1em 1em;
+
+}
+
+.listItem {
+  cursor: pointer;
+  /* height: 10em; */
+  padding: 1em;
+  display: flex;
+
+}
+
+.listItem > div {
+  display: flex !important;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px !important;
+}
+
+.listItem:hover {
+  background-color: rgba(128, 128, 128, 0.241);;
+}
+
+.listItem + .listItem {
+  border-top: 1px solid rgba(128, 128, 128, 0.063);
+}
+
+.locationInternal {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr)); 
+  gap: 1.5vw;
+  width: 100%;
+  height: 60vh;
+  /* border: 1px solid #EB9928; */
+}
+
+.locationInternal h1 {
+  color: #9F4E3D  ;
+}
+
+.locationInternal > div {
+  padding: 0.8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+
+.placeRecomnd {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+}
+
+.placeRecomnd p {
+  color: #2F4858;
+}
+
+.cityTitle {
+  color: #F9F9F9; 
+  text-align: center; 
+  margin: 0
+}
+
+@media (max-width: 1200px)  { 
+  .cityTitle {
+    font-size: 2.2em;
+  }
+}

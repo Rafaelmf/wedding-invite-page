@@ -6,6 +6,7 @@ import PartySection from "../components/party";
 import GiftsSection from "../components/gifts";
 import AboutUs from "../components/about";
 import CityLocations from "../components/city";
+import Confirmation from "../components/confirmation";
 
 const Home: NextPage = () => {
   return (
@@ -56,6 +57,8 @@ const Home: NextPage = () => {
           style={{ backgroundImage: "url(./layered-waves-haikei.svg)" }}
           className="spacer"
         ></div>
+
+        <Confirmation />
 
         <CityLocations />
       </main>
