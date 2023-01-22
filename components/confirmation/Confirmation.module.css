@@ -39,39 +39,64 @@
 .locationInternal {
   padding: 2%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr)); 
   gap: 1.5vw;
-  width: 100%;
-  height: 60vh;
-  /* border: 1px solid #EB9928; */
+  width: 60%;
+  background-color: white;
+  border-radius: 10px
+
 }
 
-.locationInternal h1 {
-  color: #9F4E3D  ;
-}
-
-.locationInternal > div {
-  padding: 0.8%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #F2F2F2;
-}
-
-.placeRecomnd {
-  width: 100%;
-  display: flex;
-  border-radius: 10px;
-}
-
-.placeRecomnd p {
-  color: #2F4858;
-}
-
-.cityTitle {
+.recommendationTitle {
   color: #F9F9F9; 
   text-align: center; 
   margin: 0
+}
+
+.recommendationCodeDiv {
+  width: 60%;
+  align-self: center;
+  justify-self: center;
+}
+
+.headerGuestList {
+  display: grid;
+  grid-template-columns: 1fr 8rem;
+}
+
+.headerGuestListConfirm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+
+
+}
+
+
+.confirmTxt {
+  grid-column: 1 / span 2;
+}
+
+
+.guestListToConfirm {
+
+}
+
+.sendBtnReady {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: white;
+  background-color: #345870;
+  justify-content: center;
+  justify-self: center;
+}
+
+.sendBtn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
 }
 
 @media (max-width: 1200px)  { 
