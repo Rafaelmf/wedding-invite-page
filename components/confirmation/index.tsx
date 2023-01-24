@@ -96,7 +96,7 @@ const index = () => {
 
   const handleSubmitConfirmations = () => {
     // Uncomment to save the confirm to db
-    // set(child(dbRef, "guest/" + code), list);
+    set(child(dbRef, "guest/" + code), list);
     setList([]);
     if (!list) return;
     const getConfirmTxt = (bool: any) => {
