@@ -11,6 +11,10 @@
   font-weight: bold;
 }
 
+div.ant-card-cover {
+  height: 100%;
+}
+
 .giftsGrid {
   display: grid;
   width: 100%;

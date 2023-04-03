@@ -148,3 +148,7 @@ align-content: center;
 .ant-image-img {
   object-fit: contain;
 }
+
+div.ant-card-cover {
+  height: 100%;
+}
