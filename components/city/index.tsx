@@ -1,6 +1,5 @@
-import { List, Rate } from "antd";
+import { List } from "antd";
 import { AiOutlineLink } from "react-icons/ai";
-import { MdOutlineAttachMoney } from "react-icons/md";
 import styles from "./City.module.css";
 import Lottie from "react-lottie";
 import * as recommend from "../../public/json/recommend.json";
@@ -150,6 +149,7 @@ const getListComponent = (list: any) => (
     </List>
   </div>
 );
+
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -158,12 +158,13 @@ const defaultOptions = {
     preserveAspectRatio: "xMidYMid slice",
   },
 };
+
 const index = () => {
   return (
     <>
       <div className={styles.location}>
         <h1 className={styles.cityTitle}>
-          <Lottie options={defaultOptions} height={100} width={100} />
+          <Lottie height={"10px"} width={"10px"} options={defaultOptions} />
           Recomendações das noivas
         </h1>
 

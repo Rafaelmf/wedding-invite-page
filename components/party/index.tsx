@@ -63,9 +63,10 @@ const index = () => {
           <div>
             <h1 className={styles.titleParty}>
               <Lottie
-                options={{ ...defaultOptions, animationData: map }}
                 height={90}
                 width={110}
+                {...defaultOptions}
+                animationData={map}
               />
               Onde ?
             </h1>
