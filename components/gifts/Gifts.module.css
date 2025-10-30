@@ -5,8 +5,8 @@
   align-items: center;
   display: flex;
   padding: 0 1rem;
-  width: 100vw;
-  max-width:100%;
+  width: 100%;
+  box-sizing: border-box;
   font-family: "JosefinSlab";
   font-weight: bold;
 }

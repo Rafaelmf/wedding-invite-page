@@ -3,7 +3,7 @@
 .ourStory {
   background-color: #f2f2f2;
   color: #2F4858;
-  padding: 1em 3.8em;
+  /* padding: 1em 3.8em; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,6 +139,7 @@
 }
 
 .twoColumn {
+  padding: 0 5em;
   margin-top: 1em;
   display: grid;
   gap: 5em;

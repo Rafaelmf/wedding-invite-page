@@ -126,7 +126,7 @@ const index = () => {
 
   return (
     <>
-      <div className={styles.gifts}>
+      <section className={styles.gifts}>
         <h1 style={{ color: "#345870", textAlign: "center" }}>
           <Lottie height={140} width={100} options={defaultOptions} />
           {/* <IoGiftSharp className="icon" /> */}
@@ -280,7 +280,7 @@ const index = () => {
             </div>
           </Modal>
         )}
-      </div>
+      </section>
     </>
   );
 };
