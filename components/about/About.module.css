@@ -183,6 +183,7 @@
     grid-column: 1;
   }
 }
+
 @media (max-width:1250px)  { 
   .carouselDiv {
     display: none;
