@@ -67,6 +67,15 @@
   color: #2F4858;
 }
 
+/* Aumentar especificidade para títulos e descrições */
+.location .placeRecomnd .ant-list-item-meta-title {
+  color: #2F4858;
+}
+
+.location .placeRecomnd .ant-list-item-meta-description {
+  color: #2F4858;
+}
+
 .cityTitle {
   color: #F9F9F9; 
   text-align: center; 

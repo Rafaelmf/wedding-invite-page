@@ -4,7 +4,7 @@ import styles from "./City.module.css";
 import Lottie from "react-lottie";
 import * as recommend from "./recommend.json";
 
-const accomodationList = [
+const accommodationList = [
   {
     title: "Hotel Nacional inn",
     description:
@@ -164,7 +164,7 @@ const index = () => {
     <>
       <div className={styles.location}>
         <h1 className={styles.cityTitle}>
-          <Lottie height={"10px"} width={"10px"} options={defaultOptions} />
+          <Lottie height={60} width={60} options={defaultOptions} />
           Recomendações das noivas
         </h1>
 
@@ -175,7 +175,7 @@ const index = () => {
               src="./svg-icons/hotel-bell.svg"
             ></img>
             <h1 style={{ margin: 0, fontSize: "2em" }}>Hospedagem</h1>
-            <>{getListComponent(accomodationList)}</>
+            <>{getListComponent(accommodationList)}</>
           </div>
           <div style={{ borderRadius: "15px" }}>
             <img

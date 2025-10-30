@@ -1,22 +1,22 @@
 
 @font-face{
   font-family: "DreamAvenue";
-  src: url("../fonts/DreamAvenue.ttf") format("truetype");
+  src: url("/fonts/DreamAvenue.ttf") format("truetype");
 }
 
 @font-face{
   font-family: "JosefinSlab";
-  src: url("../fonts/JosefinSlab.ttf") format("truetype");
+  src: url("/fonts/JosefinSlab.ttf") format("truetype");
 }
 
 @font-face{
   font-family: "OpenSansLight";
-  src: url("../fonts/OpenSansLight.ttf") format("truetype");
+  src: url("/fonts/OpenSansLight.ttf") format("truetype");
 }
 
 @font-face{
   font-family: "Halimun";
-  src: url("../fonts/Halimun.ttf") format("truetype");
+  src: url("/fonts/Halimun.ttf") format("truetype");
 }
 div[aria-label="animation"] {
   margin: 0 !important
