@@ -148,18 +148,21 @@ const index = () => {
               hoverable
               style={{
                 width: "18em",
-                height: "24em",
+                height: "28em",
                 padding: "1em",
                 borderRadius: "20px",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "flex-end",
+                overflow: "hidden",
               }}
               cover={
                 <img
-                  // height={170}
-                  // width={50}
-                  style={{ borderRadius: "20px 20px 0 0" }}
+                  style={{ 
+                    borderRadius: "20px 20px 0 0",
+                    width: "100%",
+                    height: "180px",
+                    objectFit: "cover"
+                  }}
                   alt={g.name}
                   src={g.imgUrl}
                 />
