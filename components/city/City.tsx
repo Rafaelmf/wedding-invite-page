@@ -2,7 +2,7 @@ import { List } from "antd";
 import { AiOutlineLink } from "react-icons/ai";
 import styles from "./City.module.css";
 import Lottie from "react-lottie";
-import * as recommend from "../../public/json/recommend.json";
+import * as recommend from "./recommend.json";
 
 const accomodationList = [
   {

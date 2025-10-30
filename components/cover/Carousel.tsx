@@ -1,6 +1,6 @@
 import { Card, Carousel, Image } from "antd";
 import React, { useState } from "react";
-import styles from "./About.module.css";
+import styles from "./Carousel.module.css";
 
 const CarouselPhotos = () => {
   return (

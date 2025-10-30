@@ -31,5 +31,24 @@
 max-height:100%;
 }
 
+.imageMobile {
+  display: none;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+  
+  .imageMobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+}
+
 
 

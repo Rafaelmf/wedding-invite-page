@@ -5,8 +5,8 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Iframe from "react-iframe";
 import Lottie from "react-lottie";
-import * as animationData from "../../public/json/gift.json";
-import * as loveAnimation from "../../public/json/loveAnimation.json";
+import * as animationData from "./gift.json";
+import * as loveAnimation from "./loveAnimation.json";
 
 const { Meta } = Card;
 const { TextArea } = Input;
@@ -83,7 +83,7 @@ const index = () => {
   const [messageTxt, setMessageTxt] = useState<string>("");
   const form = useRef<any>(null);
 
-  
+
   const openModal = (gift: Gift) => {
     setCurreGift(gift);
   };
@@ -157,7 +157,7 @@ const index = () => {
               }}
               cover={
                 <img
-                  style={{ 
+                  style={{
                     borderRadius: "20px 20px 0 0",
                     width: "100%",
                     height: "180px",

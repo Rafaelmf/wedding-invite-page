@@ -2,11 +2,13 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import PartySection from "../components/party";
-import GiftsSection from "../components/gifts";
-import AboutUs from "../components/about";
-import CityLocations from "../components/city";
-import Confirmation from "../components/confirmation";
+import PartySection from "../components/party/Party";
+import GiftsSection from "../components/gifts/Gifts";
+import CityLocations from "../components/city/City";
+// import Confirmation from "../components/confirmation";
+import Quiz from "../components/quiz/Quiz";
+import OurStory from "../components/ourStory/OurStory";
+import Cover from "../components/cover/Cover";
 
 const Home: NextPage = () => {
   return (
@@ -42,21 +44,25 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="main">
-        <AboutUs />
+        <Cover />
+
+        <Quiz />
+
+        <OurStory />
 
         <PartySection />
 
         <div
           style={{ backgroundImage: "url(./layered-waves-haikei-top.svg)" }}
           className="spacer"
-        ></div>
+        />
 
         <GiftsSection />
 
         <div
           style={{ backgroundImage: "url(./layered-waves-haikei.svg)" }}
           className="spacer"
-        ></div> 
+        />
 
         {/* <Confirmation /> */}
 

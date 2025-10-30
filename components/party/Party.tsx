@@ -11,7 +11,7 @@ import { Divider, Avatar } from "antd";
 import Link from "antd/lib/typography/Link";
 
 import Lottie from "react-lottie";
-import * as map from "../../public/json/map.json";
+import * as map from "./map.json";
 
 const index = () => {
   const DynamicMapWithNoSSR = dynamic(
