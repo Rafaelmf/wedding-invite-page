@@ -66,7 +66,7 @@ const Home: NextPage = () => {
       <footer className={styles.footer}>
         © por Júlia e Giovana
         <span className={styles.logo}>
-          <img src="/rings2.ico" alt="rings" width={42} height={42} />
+          <img src="./rings2.ico" alt="rings" width={42} height={42} />
         </span>
       </footer>
     </div>

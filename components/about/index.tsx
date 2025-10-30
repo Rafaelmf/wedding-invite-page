@@ -77,13 +77,13 @@ const index = () => {
           <img
             style={{ zIndex: -1 }}
             className={styles.image}
-            src="/front.png"
+            src="./front.png"
             alt="Main Photo"
           />
           <img
             style={{ zIndex: -1 }}
             className={styles.imageMobile}
-            src="/front_mobile.png"
+            src="./front_mobile.png"
             alt="Main Photo"
           />
         </div>

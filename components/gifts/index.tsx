@@ -21,57 +21,57 @@ type Gift = {
 const gifts: Gift[] = [
   {
     name: "Volta pelo ferry em Copenhagen",
-    imgUrl: "/ferry-comp.jpeg",
+    imgUrl: "./ferry-comp.jpeg",
     price: 50,
-    qrCode: "/qr50.png",
+    qrCode: "./qr50.png",
   },
   {
     name: "Dois hot dogs dinamarqueses",
-    imgUrl: "/hot-dog.jpeg",
+    imgUrl: "./hot-dog.jpeg",
     price: 75,
-    qrCode: "/qr75.png",
+    qrCode: "./qr75.png",
   },
   {
     name: "Smørrebrød (sanduíche dinamarques)",
-    imgUrl: "/sanduiche.jpeg",
+    imgUrl: "./sanduiche.jpeg",
     price: 100,
-    qrCode: "/qr100.png",
+    qrCode: "./qr100.png",
   },
 
   {
     name: "Passeio pelo Tâmisa",
-    imgUrl: "/Passeio_tamsia.jpeg",
+    imgUrl: "./Passeio_tamsia.jpeg",
     price: 125,
-    qrCode: "/qr125.png",
+    qrCode: "./qr125.png",
   },
   {
     name: "Entrada no Tivoli Garden",
-    imgUrl: "/garden.jpeg",
+    imgUrl: "./garden.jpeg",
     price: 150,
-    qrCode: "/qr150.png",
+    qrCode: "./qr150.png",
   },
   {
     name: "Brunch no Castelo Frederiksborg",
-    imgUrl: "/castelo.jpeg",
+    imgUrl: "./castelo.jpeg",
     price: 200,
-    qrCode: "/qr200.png",
+    qrCode: "./qr200.png",
   },
   {
     name: "Entrada na Legoland",
-    imgUrl: "/lego-land.jpeg",
+    imgUrl: "./lego-land.jpeg",
     price: 300,
-    qrCode: "/qr300.png",
+    qrCode: "./qr300.png",
   },
   {
     name: "Volta na London Eye",
-    imgUrl: "/london-eye.jpeg",
+    imgUrl: "./london-eye.jpeg",
     price: 500,
-    qrCode: "/qr500.png",
+    qrCode: "./qr500.png",
   },
   {
     name: "Qualquer valor",
-    imgUrl: "/love.png",
-    qrCode: "/qr.png",
+    imgUrl: "./love.png",
+    qrCode: "./qr.png",
   },
 ];
 
@@ -157,7 +157,7 @@ const index = () => {
               }}
               cover={
                 <img
-                  height={170}
+                  // height={170}
                   // width={50}
                   style={{ borderRadius: "20px 20px 0 0" }}
                   alt={g.name}
