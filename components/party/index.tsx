@@ -65,8 +65,7 @@ const index = () => {
               <Lottie
                 height={90}
                 width={110}
-                {...defaultOptions}
-                animationData={map}
+                options={{ ...defaultOptions, animationData: map }}
               />
               Onde ?
             </h1>

@@ -126,7 +126,7 @@ const index = () => {
     <>
       <div className={styles.gifts}>
         <h1 style={{ color: "#345870", textAlign: "center" }}>
-          <Lottie height={140} width={100} {...defaultOptions} />
+          <Lottie height={140} width={100} options={defaultOptions} />
           {/* <IoGiftSharp className="icon" /> */}
           Lista de Presentes
         </h1>
@@ -229,10 +229,12 @@ const index = () => {
               >
                 <h2 className={styles.paymentDescription}>
                   <Lottie
+                    options={{
+                      ...defaultOptions,
+                      animationData: loveAnimation,
+                    }}
                     height={70}
                     width={70}
-                    {...defaultOptions}
-                    animationData={loveAnimation}
                   />
                   Deixe uma mensagem para as noivas
                 </h2>
