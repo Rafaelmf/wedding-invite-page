@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           name="description"
           content="Página de convite do casamento de Júlia e Giovana"
         />
-        <link rel="icon" href="/rings2.ico" />
+        <link rel="icon" href="./rings2.ico" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
