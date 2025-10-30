@@ -1,17 +1,14 @@
 import { Card } from "antd";
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import { IoFastFoodOutline, IoTimeOutline } from "react-icons/io5";
 import { MdOutlinePets } from "react-icons/md";
 import {
   GiBackpack,
   GiBarbecue,
   GiBigDiamondRing,
   GiConversation,
-  GiIsland,
 } from "react-icons/gi";
 import styles from "./About.module.css";
-import { CgGym } from "react-icons/cg";
 import CarouselPhotos from "./Carousel";
 
 import Lottie from "react-lottie";
@@ -96,6 +93,7 @@ const index = () => {
             <span className={styles.quizTitleHeading}>Quiz sobre o casal</span>
             <span className={styles.quizDescription}>Respostas nos cards</span>
           </div>
+          
           {quizCards.map((card) => (
             <div
               key={card.name}

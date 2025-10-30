@@ -56,9 +56,9 @@ const Home: NextPage = () => {
         <div
           style={{ backgroundImage: "url(./layered-waves-haikei.svg)" }}
           className="spacer"
-        ></div>
+        ></div> 
 
-        <Confirmation />
+        {/* <Confirmation /> */}
 
         <CityLocations />
       </main>

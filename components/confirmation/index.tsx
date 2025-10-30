@@ -1,9 +1,9 @@
 import styles from "./Confirmation.module.css";
-import { Input, Button, message, List, notification } from "antd";
+import { Input, Button, List, notification } from "antd";
 import { useState } from "react";
 import { IoSearch, IoSendOutline } from "react-icons/io5";
-import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
-import * as confetti from "../../public/json/confetti.json";
+import { CloseOutlined } from "@ant-design/icons";
+import CheckOutlined from "@ant-design/icons/CheckOutlined";
 import emailjs from "@emailjs/browser";
 
 // Import the functions you need from the SDKs you need
@@ -131,8 +131,6 @@ const index = () => {
       );
   };
 
-  console.log(list);
-
   return (
     <>
       <div className={styles.location}>
@@ -232,15 +230,6 @@ const index = () => {
                 ]}
               >
                 <List.Item.Meta title={guest.Nome} />
-                {/* 
-                {guest.confirmed === true && (
-                  <Lottie
-                    style={{ position: "absolute" }}
-                    options={defaultOptions}
-                    height={40}
-                    width={150}
-                  />
-                )} */}
               </List.Item>
             )}
           />

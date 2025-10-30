@@ -1,10 +1,10 @@
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import moment from "moment";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
 const daySeconds = 86400;
+
 const colorsList = [
   "df0c06",
   "fd4600",
@@ -41,16 +41,17 @@ const getTimeSeconds = (time: number) => (minuteSeconds - time) | 0;
 const getTimeMinutes = (time: number) =>
   ((time % hourSeconds) / minuteSeconds) | 0;
 const getTimeHours = (time: number) => ((time % daySeconds) / hourSeconds) | 0;
-const getTimeDays = (time: number) => (time / daySeconds) | 0;
 
 const TimerCountDown = () => {
-  const startTime = moment();
-  const endTime = moment("2023-4-22");
-  const Difference_In_Time = endTime.diff(startTime);
-  const Difference_In_Days = endTime.diff(startTime, "days");
+  const startTime = new Date();
+  const endTime = new Date("2026-04-22");
+
+  // Calculate difference in milliseconds, then convert to seconds
+  const Difference_In_Time = Math.max(0, endTime.getTime() - startTime.getTime());
+  const Difference_In_Seconds = Math.floor(Difference_In_Time / 1000);
+  const Difference_In_Days = Math.floor(Difference_In_Seconds / daySeconds);
 
   const daysDuration = Difference_In_Days * daySeconds;
-  console.log(daysDuration / daySeconds);
 
   return (
     <div
@@ -80,25 +81,26 @@ const TimerCountDown = () => {
         colors="#ffb400"
         trailColor="#f2f2f2"
         duration={daySeconds}
-        initialRemainingTime={Difference_In_Time % daySeconds}
+        initialRemainingTime={Difference_In_Seconds % daySeconds}
         onComplete={(totalElapsedTime) => ({
-          shouldRepeat: Difference_In_Time - totalElapsedTime > hourSeconds,
+          shouldRepeat: Difference_In_Seconds - totalElapsedTime > hourSeconds,
         })}
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
             {renderTime("Horas", getTimeHours(daySeconds - elapsedTime))}
           </span>
-        )}
+        )
+        }
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
         colors="#00a364"
         trailColor="#f2f2f2"
         duration={hourSeconds}
-        initialRemainingTime={Difference_In_Time % hourSeconds}
+        initialRemainingTime={Difference_In_Seconds % hourSeconds}
         onComplete={(totalElapsedTime) => ({
-          shouldRepeat: Difference_In_Time - totalElapsedTime > minuteSeconds,
+          shouldRepeat: Difference_In_Seconds - totalElapsedTime > minuteSeconds,
         })}
       >
         {({ elapsedTime, color }) => (
@@ -112,9 +114,9 @@ const TimerCountDown = () => {
         colors="#0075cb"
         trailColor="#f2f2f2"
         duration={minuteSeconds}
-        initialRemainingTime={Difference_In_Time % minuteSeconds}
+        initialRemainingTime={Difference_In_Seconds % minuteSeconds}
         onComplete={(totalElapsedTime) => ({
-          shouldRepeat: Difference_In_Time - totalElapsedTime > 0,
+          shouldRepeat: Difference_In_Seconds - totalElapsedTime > 0,
         })}
       >
         {({ elapsedTime, color }: any) => (

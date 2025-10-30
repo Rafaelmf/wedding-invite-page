@@ -11,7 +11,7 @@ const Map = () => {
     iconSize: [38, 38], // size of the icon
   });
 
-  const leafletRef = useRef<any>();
+  const leafletRef = useRef<any>(null);
   useEffect(() => {
     if (!leafletRef || !leafletRef.current) return;
     leafletRef.current.openPopup();

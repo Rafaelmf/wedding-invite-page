@@ -1,15 +1,10 @@
 import dynamic from "next/dynamic";
-import React from "react";
 import styles from "./Party.module.css";
 import TimerCountDown from "./TimerCountDown";
 
-import { IoLocationOutline } from "react-icons/io5";
 import {
-  AiFillFacebook,
-  AiOutlineClockCircle,
   AiOutlineFacebook,
   AiOutlineInstagram,
-  AiOutlineWhatsApp,
 } from "react-icons/ai";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { Divider, Avatar } from "antd";

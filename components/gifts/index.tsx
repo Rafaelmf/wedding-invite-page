@@ -81,7 +81,9 @@ const index = () => {
 
   const [name, setName] = useState<string>("");
   const [messageTxt, setMessageTxt] = useState<string>("");
-  const form = useRef<any>();
+  const form = useRef<any>(null);
+
+  
   const openModal = (gift: Gift) => {
     setCurreGift(gift);
   };
